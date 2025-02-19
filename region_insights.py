@@ -54,6 +54,7 @@ fix = { # with identification help from genAI
     'data analytics':'analytics',
     'online audio and video media':'entertainmenttech',
     'technology':'information technology',
+    '3d printing':'3dtech'
 }
 
 def clean_cat(cat):
@@ -199,8 +200,8 @@ map_e = px.scatter_map(
     color="primaryTag", # color represents top category
     hover_name='headquarters',
     hover_data={'primaryTag': True, "amount": True, 'num_deals': True, "lat": False, "lon":False},
-    labels={'amount':'Total Investment Volume', 'primaryTag':'Top Investment Categories',
-            'num_deals': 'Total Number of Deals'},
+    labels={'amount':'Investment Volume by Category', 'primaryTag':'Top Investment Categories',
+            'num_deals': 'Total Number of Deals for Headquarter'},
     color_discrete_sequence=px.colors.qualitative.Prism,
     size_max=60, 
     zoom=3
