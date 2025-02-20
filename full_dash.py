@@ -59,6 +59,52 @@ province_options = sorted(valid_deals['province'].dropna().unique())
 stage_options = sorted(valid_deals['roundType'].unique())
 stage_options = [stage for stage in stage_options if stage.lower() != 'unknown']
 
+#------------------------------------ FUNDING STAGES  ------------------------------------
+
+def clean_stage(stage):
+    mapping = {
+        "pre seed": "Pre-Seed",
+        "seed": "Seed",
+        "series a": "Series A",
+        "series b": "Series B",
+        "series c": "Series C",
+        "series d": "Series D+",
+        "series e": "Series D+",
+        "series f": "Series D+",
+        "growth": "Growth",
+        "ipo": "IPO"
+    }
+    return mapping.get(stage.lower(), "Other")
+
+df_deals["roundType"] = df_deals["roundType"].astype(str).apply(clean_stage)
+
+# Proportion of Deals per Investment Stage
+# Count the number of deals at each funding stage
+stage_counts = df_deals['roundType'].value_counts(normalize=True) * 100  # Convert to percentage
+stage_counts = stage_counts.reset_index()  # Reset index to turn it into a DataFrame
+stage_counts.columns = ['Funding Stage', 'Proportion']  # Rename columns for clarity
+
+# Create a pie chart
+fig_stage_proportion = px.pie(stage_counts, 
+                               names='Funding Stage', 
+                               values='Proportion',
+                               title='Proportion of Deals at Each Investment Stage',
+                               color_discrete_sequence=px.colors.qualitative.Prism)
+
+# Average Deal Size per Stage Over Time
+deal_size = df_deals.groupby(["year", "roundType"])['amount'].mean().reset_index()
+fig_avg_deal_size = px.line(deal_size, x='year', y='amount', color='roundType',
+                            title='Average Deal Size Per Stage Over Time',
+                            labels={'amount': 'Average Deal Size ($)', 'year': 'Year'})
+
+# Trends in Number and Size of Deals per Stage Over Years
+deal_trends = df_deals.groupby(["year", "roundType"]).agg({"id": "count", "amount": "sum"}).reset_index()
+deal_trends.rename(columns={"id": "num_deals"}, inplace=True)
+fig_deal_trends = px.bar(deal_trends, x='year', y='num_deals', color='roundType',
+                         title='Trends in Number of Deals Per Stage Over Years',
+                         labels={'num_deals': 'Number of Deals', 'year': 'Year'},
+                         barmode='stack', color_discrete_sequence=px.colors.qualitative.Prism)
+
 #------------------------------------ INVESTOR BEHAVIOUR ------------------------------------
 
 # Categorize countries: Keep US & Canada, group others as 'Other International'
@@ -161,6 +207,26 @@ fig4.update_layout(
     yaxis_title="Total Funding Received",
     xaxis_tickangle=45,
     legend_title="Total Deals"
+)
+
+# Most active investment firms yearly
+active_firms = df_di.groupby(["investorName", "year"]).size().unstack()
+
+# Get the top 10 most active firms based on total number of investments
+top_active_firms = active_firms.sum(axis=1).nlargest(10)
+
+fig5 = px.bar(
+    x=top_active_firms.index,
+    y=top_active_firms.values,
+    labels={"x": "Investment Firm", "y": "Number of Investments"},
+    title="Top 10 Most Active Investment Firms",
+)
+
+fig5.update_layout(
+    xaxis_tickangle=-45,
+    xaxis_title="Investment Firm",
+    yaxis_title="Number of Investments",
+    coloraxis_showscale=False ,
 )
 
 # ------------------------------------ REGIONAL INSIGHTS ------------------------------------
@@ -304,25 +370,42 @@ app.layout = html.Div([
                 dcc.Tab(label='Regional Trends', children=[dcc.Graph(figure=fig_region,style={'width': '80%', 'height': '500px', 'margin': 'auto'})])
             ]),
             dcc.Tab(label=' Funding Stages Analysis', children=[
-            
+                html.Div([
+                    dcc.Graph(
+                        figure=fig_stage_proportion,
+                        style={'width': '80%', 'height': '500px', 'margin': 'auto'}
+                    ),
+                    dcc.Graph(
+                        figure=fig_avg_deal_size,
+                        style={'width': '80%', 'height': '500px','margin': 'auto'}
+                    ),
+                    dcc.Graph(
+                        figure=fig_deal_trends,
+                        style={'width': '80%', 'height': '500px', 'margin': 'auto'}
+                    ),
+                ]),
             ]),
             dcc.Tab(label='Investor Demographics & Behavior', children=[
                 html.Div([
                     dcc.Graph(
                         figure=fig1,
-                        style={'width': '90%', 'height': '700px'}
+                        style={'width': '80%', 'height': '500px','margin': 'auto'}
                     ),
                     dcc.Graph(
                         figure=fig2,
-                        style={'width': '90%', 'height': '700px'}
+                        style={'width': '90%', 'height': '500px','margin': 'auto'}
                     ),
                     dcc.Graph(
                         figure=fig3,
-                        style={'width': '90%', 'height': '700px'}
+                        style={'width': '80%', 'height': '500px','margin': 'auto'}
                     ),
                     dcc.Graph(
                         figure=fig4,
-                        style={'width': '90%', 'height': '700px'}
+                        style={'width': '80%', 'height': '500px','margin': 'auto'}
+                    ),
+                    dcc.Graph(
+                        figure=fig5,
+                        style={'width': '80%', 'height': '500px','margin': 'auto'}
                     ),
                 ]),
             
