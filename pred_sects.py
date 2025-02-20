@@ -4,7 +4,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import mean_absolute_error
+from sklearn.metrics import mean_absolute_error, accuracy_score, classification_report, confusion_matrix
 
 
 df_comp = pd.read_csv("cleaned_data_v2/cleaned_companies.csv")
@@ -38,7 +38,7 @@ cat_trends['prevDeals'] = cat_trends.groupby('primaryTag')['numDeals'].shift(1)
 X = cat_trends[['year', 'prevInv', 'prevDeals']]
 y = cat_trends['totalInv']
 
-# train model
+# train model - random forest, growth rate prediction
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 mod = RandomForestRegressor(n_estimators=100, random_state=42)
 mod.fit(X_train, y_train)
@@ -46,6 +46,9 @@ y_pred = mod.predict(X_test)
 
 mae = mean_absolute_error(y_test, y_pred)
 print(mae)
+
+# acc = accuracy_score(y_test, y_pred)
+# print(acc)
 
 future = [2025, 2026, 2027]
 predictions = []
