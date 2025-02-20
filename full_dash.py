@@ -367,7 +367,6 @@ app.layout = html.Div([
                 dcc.Tab(label='Total Investment', children=[dcc.Graph(figure=fig_investment,style={'width': '80%', 'height': '500px', 'margin': 'auto'})]),
                 dcc.Tab(label='Deal Volume', children=[dcc.Graph(figure=fig_deals,style={'width': '80%', 'height': '500px', 'margin': 'auto'})]),
                 dcc.Tab(label='Deal Size Distribution', children=[dcc.Graph(figure=fig_deal_size,style={'width': '80%', 'height': '500px', 'margin': 'auto'})]),
-                dcc.Tab(label='Regional Trends', children=[dcc.Graph(figure=fig_region,style={'width': '80%', 'height': '500px', 'margin': 'auto'})])
             ]),
             dcc.Tab(label=' Funding Stages Analysis', children=[
                 html.Div([

@@ -58,10 +58,10 @@ for sector in cat_trends['primaryTag'].unique():
     prev_deals = last['numDeals']
     
     for year in future:
-        X_future = [[year, prev_inv, prev_deals]]
+        X_future = pd.DataFrame([[year, prev_inv, prev_deals]], columns=['year', 'prevInv', 'prevDeals'])
         future_pred = mod.predict(X_future)[0]
         predictions.append((sector, year, future_pred))
         prev_inv = future_pred
 
-future_df = pd.DataFrame(predictions, columns=['primaryTag', 'year', 'predInv'])
-print(future_df.sort_values(by='predInv', ascending=False).head(5))
+future_df = pd.DataFrame(predictions, columns=['primaryTag', 'year', 'predInvGrowth'])
+print(future_df.sort_values(by='predInvGrowth', ascending=False).head(5))
