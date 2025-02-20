@@ -9,7 +9,7 @@ import plotly.express as px
 df_comp = pd.read_csv("cleaned_data/cleaned_companies.csv")
 df_di = pd.read_csv("cleaned_data/cleaned_dealInvestor.csv")
 df_deals = pd.read_csv("cleaned_data/cleaned_deals.csv") 
-df_invs = pd.read_csv("cleaned_data/cleaned_deals.csv")
+df_invs = pd.read_csv("cleaned_data/cleaned_investor.csv")
 df_eco = pd.read_csv("cleaned_data/cleaned_ecosystem.csv")   
 
 # print(df_comp.info())
@@ -74,7 +74,6 @@ def clean_cat(cat):
 
 # make categories clean for all the relevant dfs
 df_deals['primaryTag'] = df_deals['primaryTag'].apply(clean_cat)
-df_invs['primaryTag'] = df_invs['primaryTag'].apply(clean_cat)
 df_comp['primaryTag'] = df_comp['primaryTag'].apply(clean_cat)
 
 # identify all possible ecosystems
@@ -86,7 +85,6 @@ def clean_eco(eco):
   else:
     return eco
 df_deals['ecosystemName'] = df_deals['ecosystemName'].apply(clean_eco)
-df_invs['ecosystemName'] = df_invs['ecosystemName'].apply(clean_eco)
 df_comp['ecosystemName'] = df_comp['ecosystemName'].apply(clean_eco)
 df_di['ecosystemName'] = df_di['ecosystemName'].apply(clean_eco)
 
@@ -146,7 +144,6 @@ def clean_hq(hq):
 
 # make headquarters clean for all the relevant dfs
 df_deals['headquarters'] = df_deals['headquarters'].apply(clean_hq)
-df_invs['headquarters'] = df_invs['headquarters'].apply(clean_hq)
 df_di['headquarters'] = df_di['headquarters'].apply(clean_hq)
 
 uni_hq = df_deals['headquarters'].unique()

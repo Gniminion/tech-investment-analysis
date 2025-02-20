@@ -9,7 +9,7 @@ import plotly.express as px
 df_comp = pd.read_csv("cleaned_data_v2/cleaned_companies.csv")
 df_di = pd.read_csv("cleaned_data_v2/cleaned_dealInvestor.csv")
 df_deals = pd.read_csv("cleaned_data_v2/cleaned_deals.csv") 
-df_invs = pd.read_csv("cleaned_data_v2/cleaned_deals.csv")
+df_invs = pd.read_csv("cleaned_data_v2/cleaned_investor.csv")
 df_eco = pd.read_csv("cleaned_data_v2/cleaned_ecosystem.csv")   
 
 #------------------------------------ INVESTMENTS OVER TIME ------------------------------------
@@ -58,6 +58,110 @@ year_options = sorted(valid_deals['year'].unique())
 province_options = sorted(valid_deals['province'].dropna().unique())
 stage_options = sorted(valid_deals['roundType'].unique())
 stage_options = [stage for stage in stage_options if stage.lower() != 'unknown']
+
+#------------------------------------ INVESTOR BEHAVIOUR ------------------------------------
+
+# Categorize countries: Keep US & Canada, group others as 'Other International'
+df_invs["country_grouped"] = df_invs["country"].apply(
+    lambda x: x if x == "usa" else ("canada" if x == "canada" else "other International")
+)
+
+# Count number of investment firms by country group
+investor_counts = df_invs.groupby("country_grouped").size().reset_index(name="count")
+
+# Visualize Investment Firm Demographics with Plotly
+fig1 = px.bar(
+    investor_counts,
+    x="country_grouped",
+    y="count",
+    title="Investment Firm Demographics",
+    labels={"country_grouped": "Country Group", "count": "Number of Investment Firms"},
+    color="country_grouped",  # Optional: color by country group
+    color_discrete_sequence=px.colors.sequential.Viridis  # Optional: use 'Viridis' color palette
+)
+
+# Assuming the dataframe 'df_invs' is already defined
+investment_counts = df_invs.explode("stages").groupby(["country", "stages"]).size().reset_index(name="count")
+
+# Filtering out insignificant data (threshold of at least 5 firms per category)
+investment_counts = investment_counts[investment_counts["count"] >= 5]
+
+# Pivoting for better visualization
+investment_pivot = investment_counts.pivot(index="country", columns="stages", values="count").fillna(0)
+
+# Plot the heatmap using Plotly
+fig2 = px.imshow(
+    investment_pivot,
+    title="Number of Significant Investments per Funding Stage by Country",
+    labels={"x": "Funding Stage", "y": "Country", "color": "Number of Firms"},
+    color_continuous_scale="Blues",  # Optional: change color scale
+)
+
+# Adjust layout for better presentation
+fig2.update_xaxes(tickangle=45, tickmode='array')
+fig2.update_layout(
+    xaxis_title="Funding Stage",
+    yaxis_title="Country",
+    xaxis=dict(tickmode='array'),
+    yaxis=dict(tickmode='array'),
+    coloraxis_colorbar=dict(title="Number of Firms")
+)
+
+# Assuming the dataframe 'df_deals' is already defined
+deal_size_by_stage = df_deals.groupby("roundType")["amount"].mean().reset_index(name="avg_deal_size")
+
+# Plot the bar chart using Plotly with Cividis color palette
+fig3 = px.bar(
+    deal_size_by_stage,
+    x="roundType",
+    y="avg_deal_size",
+    title="Average Deal Size Per Funding Stage",
+    labels={"roundType": "Funding Stage", "avg_deal_size": "Average Deal Size"},
+    color="roundType",  # Optional: color by funding stage for better visualization
+    color_continuous_scale="Cividis"  # Set color scale to Cividis
+)
+
+# Assuming the dataframe 'df_di' and 'df_deals' are already defined
+# Identify leading investors per stage
+lead_investors_per_stage = df_di.groupby(["roundType", "investorName"]).agg(
+    lead_count=("leadInvestorFlag", "sum"),
+    total_deals=("dealId", "count")
+).reset_index()
+
+# Sort and select top investors per stage
+top_lead_investors = lead_investors_per_stage.sort_values(
+    by=["roundType", "lead_count", "total_deals"], ascending=[True, False, False]
+).groupby("roundType").head(3)  # Top 3 investors per stage
+
+# Influence on funding success
+funding_data = df_deals.merge(df_di, on="id", how="left")
+investor_funding = funding_data.groupby("investorName").agg(
+    total_funding=("amount", "sum"),
+    avg_funding=("amount", "mean"),
+    total_deals=("id", "count")
+).reset_index()
+
+# Filter for leading investors
+top_investors = investor_funding[investor_funding["investorName"].isin(top_lead_investors["investorName"])]
+
+# Plot using Plotly
+fig4 = px.bar(
+    top_investors.sort_values("total_funding", ascending=False),
+    x="investorName",
+    y="total_funding",
+    color="total_deals",
+    title="Top Lead Investors and their Funding Influence",
+    labels={"investorName": "Investor Name", "total_funding": "Total Funding Received"},
+    color_continuous_scale="Inferno_r"
+)
+
+# Adjust layout for better readability
+fig4.update_layout(
+    xaxis_title="Investor Name",
+    yaxis_title="Total Funding Received",
+    xaxis_tickangle=45,
+    legend_title="Total Deals"
+)
 
 # ------------------------------------ REGIONAL INSIGHTS ------------------------------------
 # top investment categories
@@ -146,7 +250,7 @@ map_hq.update_layout(
     mapbox_center={"lat": 56, "lon": -106}, 
 )
 
-# Putting everything into a dashboard
+# ------------------------- Putting everything into a dashboard -------------------------
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 app.layout = html.Div([
@@ -203,6 +307,24 @@ app.layout = html.Div([
             
             ]),
             dcc.Tab(label='Investor Demographics & Behavior', children=[
+                html.Div([
+                    dcc.Graph(
+                        figure=fig1,
+                        style={'width': '90%', 'height': '700px'}
+                    ),
+                    dcc.Graph(
+                        figure=fig2,
+                        style={'width': '90%', 'height': '700px'}
+                    ),
+                    dcc.Graph(
+                        figure=fig3,
+                        style={'width': '90%', 'height': '700px'}
+                    ),
+                    dcc.Graph(
+                        figure=fig4,
+                        style={'width': '90%', 'height': '700px'}
+                    ),
+                ]),
             
             ]),
             dcc.Tab(label='Regional Insights', children=[
