@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.neighbors import KNeighborsClassifier
@@ -24,7 +23,6 @@ cat_trends['dealGrowth'] = cat_trends.groupby('primaryTag')['numDeals'].pct_chan
 
 cat_trends.replace([np.inf, -np.inf], np.nan, inplace=True)
 cat_trends = cat_trends.dropna(subset=['invGrowth', 'dealGrowth']) # drop the first years where theres no growth rate indicators
-cat_trends = cat_trends[cat_trends['year'].isin([2021, 2022, 2023, 2024])] # grab a subset of the recent four years
 # target of high growth sectors is a sector with more than 50% investment growth and no decrease of deals from the prev year
 cat_trends['hiGrowth'] = ((cat_trends['invGrowth'] > 0.5) & (cat_trends['dealGrowth'] >= 0)).astype(int)
 print(cat_trends)
@@ -77,13 +75,11 @@ mod.fit(X_train, y_train)
 pred = []
 # uses model to predict whether each sector (category) will be high growth or low growth in 2025
 for sector in cat_trends['primaryTag'].unique():
-    
     last_row = cat_trends[cat_trends['primaryTag'] == sector].iloc[-1]
     prev_inv = last_row['totalInv']
     prev_deals = last_row['numDeals']
     prev_inv_growth = last_row['invGrowth']
     prev_deals_growth = last_row['dealGrowth']
-    
     X_future = pd.DataFrame([[prev_inv, prev_deals, prev_inv_growth, prev_deals_growth]],
                             columns=['totalInv', 'numDeals', 'invGrowth', 'dealGrowth'])
     X_future = X_future.to_numpy()
@@ -91,22 +87,20 @@ for sector in cat_trends['primaryTag'].unique():
     pred.append((sector, 2025, hi_or_lo))
 
 future_df = pd.DataFrame(pred, columns=['primaryTag', 'year', 'hiGrowth'])
-#sectors that are likely to be high growth in 2025
+# sectors that are likely to be high growth in 2025
 hg_sectors = future_df[future_df['hiGrowth'] == 1]
 print(hg_sectors)
 
-
-# model - random forest regression, growth rate prediction
+# model - random forest regression, investment amount prediction
 cat_trends = df_deals.groupby(['primaryTag', 'year']).agg(
     totalInv=('amount', 'sum'), 
     numDeals=('amount', 'count')
 ).reset_index()
 
-# calculates growth rate for both number of deals and investment amount
 cat_trends['invGrowth'] = cat_trends.groupby('primaryTag')['totalInv'].pct_change()
 cat_trends['dealGrowth'] = cat_trends.groupby('primaryTag')['numDeals'].pct_change()
 cat_trends.replace([np.inf, -np.inf], np.nan, inplace=True)
-cat_trends = cat_trends.dropna(subset=['invGrowth', 'dealGrowth']) # drop the first years where theres no growth rate indicators
+cat_trends = cat_trends.dropna(subset=['invGrowth', 'dealGrowth']) 
 
 # lag features (previous year investments & deals)
 cat_trends['prevInv'] = cat_trends.groupby('primaryTag')['totalInv'].shift(1)
@@ -132,7 +126,6 @@ for sector in cat_trends['primaryTag'].unique():
     last = cat_trends[cat_trends['primaryTag'] == sector].iloc[-1] 
     prev_inv = last['totalInv']
     prev_deals = last['numDeals']
-    
     X_future = pd.DataFrame([[2025, prev_inv, prev_deals]], columns=['year', 'prevInv', 'prevDeals'])
     future_pred = mod.predict(X_future)[0]
     predictions.append((sector, 2025, future_pred))
@@ -140,4 +133,4 @@ for sector in cat_trends['primaryTag'].unique():
 
 future_df = pd.DataFrame(predictions, columns=['primaryTag', 'year', 'predInv'])
 # top 5 predicted sectors in 2025
-print(future_df.sort_values(by='predInv', ascending=False).head(5))
+print(future_df.sort_values(by='predInv', ascending=False).head(10))
