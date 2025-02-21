@@ -6,7 +6,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import mean_absolute_error, accuracy_score, classification_report
+from sklearn.metrics import mean_absolute_error, accuracy_score, classification_report, r2_score
 from sklearn.preprocessing import StandardScaler
 
 df_deals = pd.read_csv("cleaned_data_v2/cleaned_deals.csv") 
@@ -29,7 +29,7 @@ print(cat_trends)
 cat_trends['hiGrowth'].value_counts().plot(kind='bar', color=['blue', 'orange'], title='Class Distribution')
 plt.show()
 
-X = cat_trends[['totalInv', 'numDeals', 'invGrowth', 'dealGrowth']]
+X = cat_trends.drop(columns=['hiGrowth', 'primaryTag'])
 y = cat_trends['hiGrowth']
 
 # text split and standardize
@@ -76,12 +76,13 @@ pred = []
 # uses model to predict whether each sector (category) will be high growth or low growth in 2025
 for sector in cat_trends['primaryTag'].unique():
     last_row = cat_trends[cat_trends['primaryTag'] == sector].iloc[-1]
+    prev_year = last_row['year'] 
     prev_inv = last_row['totalInv']
     prev_deals = last_row['numDeals']
     prev_inv_growth = last_row['invGrowth']
     prev_deals_growth = last_row['dealGrowth']
-    X_future = pd.DataFrame([[prev_inv, prev_deals, prev_inv_growth, prev_deals_growth]],
-                            columns=['totalInv', 'numDeals', 'invGrowth', 'dealGrowth'])
+    X_future = pd.DataFrame([[prev_year, prev_inv, prev_deals, prev_inv_growth, prev_deals_growth]],
+                            columns=['year', 'totalInv', 'numDeals', 'invGrowth', 'dealGrowth'])
     X_future = X_future.to_numpy()
     hi_or_lo = mod.predict(X_future)[0]
     pred.append((sector, 2025, hi_or_lo))
@@ -102,11 +103,7 @@ cat_trends['dealGrowth'] = cat_trends.groupby('primaryTag')['numDeals'].pct_chan
 cat_trends.replace([np.inf, -np.inf], np.nan, inplace=True)
 cat_trends = cat_trends.dropna(subset=['invGrowth', 'dealGrowth']) 
 
-# lag features (previous year investments & deals)
-cat_trends['prevInv'] = cat_trends.groupby('primaryTag')['totalInv'].shift(1)
-cat_trends['prevDeals'] = cat_trends.groupby('primaryTag')['numDeals'].shift(1)
-
-X = cat_trends[['year', 'prevInv', 'prevDeals']]
+X = cat_trends.drop(columns=['totalInv', 'primaryTag'])
 y = cat_trends['totalInv']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 mod = RandomForestRegressor(n_estimators=100, random_state=42)
@@ -119,18 +116,23 @@ print(mae)
 range = cat_trends['totalInv'].max() - cat_trends['totalInv'].min()
 print(range)
 # 2481721091
+r2 = r2_score(y_test, y_pred)
+print(r2)
 
 # predicts the investment amount of each sector for 2025
 predictions = []
 for sector in cat_trends['primaryTag'].unique():
     last = cat_trends[cat_trends['primaryTag'] == sector].iloc[-1] 
-    prev_inv = last['totalInv']
+    prev_year = last['year']
     prev_deals = last['numDeals']
-    X_future = pd.DataFrame([[2025, prev_inv, prev_deals]], columns=['year', 'prevInv', 'prevDeals'])
+    prev_dg = last['dealGrowth']
+    prev_ig = last['invGrowth']
+    X_future = pd.DataFrame([[prev_year, prev_deals, prev_ig, prev_dg]], 
+                            columns=['year', 'numDeals', 'invGrowth', 'dealGrowth'])
     future_pred = mod.predict(X_future)[0]
     predictions.append((sector, 2025, future_pred))
     prev_inv = future_pred
 
 future_df = pd.DataFrame(predictions, columns=['primaryTag', 'year', 'predInv'])
-# top 5 predicted sectors in 2025
+# top 10 predicted sectors with the most investments in 2025
 print(future_df.sort_values(by='predInv', ascending=False).head(10))
