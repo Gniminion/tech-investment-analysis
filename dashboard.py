@@ -62,48 +62,27 @@ stage_options = [stage for stage in stage_options if stage.lower() != 'unknown']
 
 #------------------------------------ FUNDING STAGES  ------------------------------------
 
-def clean_stage(stage):
-    mapping = {
-        "pre seed": "Pre-Seed",
-        "seed": "Seed",
-        "series a": "Series A",
-        "series b": "Series B",
-        "series c": "Series C",
-        "series d": "Series D+",
-        "series e": "Series D+",
-        "series f": "Series D+",
-        "growth": "Growth",
-        "ipo": "IPO"
-    }
-    return mapping.get(stage.lower(), "Other")
+stage_counts = pd.read_csv("agg_data/stage_counts.csv")
+deal_size = pd.read_csv("agg_data/deal_size.csv") 
+deal_trends = pd.read_csv("agg_data/deal_trends.csv")   
 
-df_deals["roundType"] = df_deals["roundType"].astype(str).apply(clean_stage)
-
-# Proportion of Deals per Investment Stage
-# Count the number of deals at each funding stage
-stage_counts = df_deals['roundType'].value_counts(normalize=True) * 100  # Convert to percentage
-stage_counts = stage_counts.reset_index()  # Reset index to turn it into a DataFramie
-stage_counts.columns = ['Funding Stage', 'Proportion']  # Rename columns for clarity
-
-# Create a pie chart
+# proportion of deals per stage
 fig_stage_proportion = px.pie(stage_counts, 
                                names='Funding Stage', 
                                values='Proportion',
                                title='Proportion of Deals at Each Investment Stage',
                                color_discrete_sequence=px.colors.qualitative.Prism)
 
-# Average Deal Size per Stage Over Time
-deal_size = df_deals.groupby(["year", "roundType"])['amount'].mean().reset_index()
+# avg deal size per stage over time
 fig_avg_deal_size = px.line(deal_size, x='year', y='amount', color='roundType',
                             title='Average Deal Size Per Stage Over Time',
                             labels={'amount': 'Average Deal Size ($)', 'year': 'Year'})
 
-# Trends in Number and Size of Deals per Stage Over Years
+# trends in number and size of deals over years
 deal_trends = df_deals.groupby(["year", "roundType"]).agg({"id": "count", "amount": "sum"}).reset_index()
-deal_trends.rename(columns={"id": "num_deals"}, inplace=True)
-fig_deal_trends = px.bar(deal_trends, x='year', y='num_deals', color='roundType',
+fig_deal_trends = px.bar(deal_trends, x='year', y='id', color='roundType',
                          title='Trends in Number of Deals Per Stage Over Years',
-                         labels={'num_deals': 'Number of Deals', 'year': 'Year'},
+                         labels={'id': 'Number of Deals', 'year': 'Year'},
                          barmode='stack', color_discrete_sequence=px.colors.qualitative.Dark24)
 
 #------------------------------------ INVESTOR BEHAVIOUR ------------------------------------
