@@ -12,18 +12,18 @@ df_invs = pd.read_csv("cleaned_data/cleaned_investor.csv")
 df_eco = pd.read_csv("cleaned_data/cleaned_ecosystem.csv")   
 
 #------------------------------------ INVESTMENTS OVER TIME ------------------------------------
-# Group by year and sum the investment amount
+# sum the investment amount
 investment_trends = df_deals.groupby('year')['amount'].sum().reset_index()
 fig_investment = px.line(investment_trends, x='year', y='amount', markers=True,
                          title='Total Investment in Canadian Startups (2019-2024)')
 
-# Count number of deals per year
+# number of deals per year
 deal_volume = df_deals.groupby('year')['id'].count().reset_index()
 deal_volume.rename(columns={'id': 'num_deals'}, inplace=True)
 fig_deals = px.bar(deal_volume, x='year', y='num_deals',
                    title='Number of Investment Deals Per Year (2019-2024)', color='num_deals')
 
-# Define deal size categories
+# deal size categories
 def categorize_deal(amount):
     if amount < 100000:
         return '<$100K'
@@ -41,20 +41,20 @@ deal_size_pivot = deal_size_trends.pivot(index='year', columns='deal_size_catego
 fig_deal_size = px.bar(deal_size_trends, x='year', y='amount', color='deal_size_category',
                         title='Investment Distribution by Deal Size (2019-2024)', barmode='stack')
 
-# Merge deals with ecosystems
+# merge deals with ecosystems
 df_deals_regions = df_deals.merge(df_eco, on='ecosystemName', how='left')
 region_trends = df_deals_regions.groupby(['year', 'province'])['amount'].sum().reset_index()
 fig_region = px.line(region_trends, x='year', y='amount', color='province', markers=True,
                       title='Investment Trends by Region (2019-2024)')
 
-# Data cleaning
+# data cleaning
 valid_deals = df_deals_regions [(df_deals_regions ['roundType'] != 'Unknown') & (~df_deals_regions['province'].isna())]
 valid_deals['date'] = pd.to_datetime(valid_deals['date'])
 valid_deals['year'] = valid_deals['date'].dt.year
 valid_deals = valid_deals[valid_deals['year'] != 2025]
 
 
-# Get dropdown options
+# get dropdown options
 year_options = sorted(valid_deals['year'].unique())
 province_options = sorted(valid_deals['province'].dropna().unique())
 stage_options = sorted(valid_deals['roundType'].unique())
@@ -82,7 +82,7 @@ df_deals["roundType"] = df_deals["roundType"].astype(str).apply(clean_stage)
 # Proportion of Deals per Investment Stage
 # Count the number of deals at each funding stage
 stage_counts = df_deals['roundType'].value_counts(normalize=True) * 100  # Convert to percentage
-stage_counts = stage_counts.reset_index()  # Reset index to turn it into a DataFrame
+stage_counts = stage_counts.reset_index()  # Reset index to turn it into a DataFramie
 stage_counts.columns = ['Funding Stage', 'Proportion']  # Rename columns for clarity
 
 # Create a pie chart
@@ -113,38 +113,28 @@ df_invs["country_grouped"] = df_invs["country"].apply(
     lambda x: x if x == "usa" else ("canada" if x == "canada" else "other International")
 )
 
-# Count number of investment firms by country group
+# count number of investment firms by country group
 investor_counts = df_invs.groupby("country_grouped").size().reset_index(name="count")
-
-# Visualize Investment Firm Demographics with Plotly
 fig1 = px.bar(
     investor_counts,
     x="country_grouped",
     y="count",
     title="Investment Firm Demographics",
     labels={"country_grouped": "Country Group", "count": "Number of Investment Firms"},
-    color="country_grouped",  # Optional: color by country group
-    color_discrete_sequence=px.colors.sequential.Viridis  # Optional: use 'Viridis' color palette
+    color="country_grouped",  
+    color_discrete_sequence=px.colors.sequential.Viridis 
 )
-
-# Assuming the dataframe 'df_invs' is already defined
 investment_counts = df_invs.explode("stages").groupby(["country", "stages"]).size().reset_index(name="count")
-
-# Filtering out insignificant data (threshold of at least 5 firms per category)
 investment_counts = investment_counts[investment_counts["count"] >= 5]
-
-# Pivoting for better visualization
 investment_pivot = investment_counts.pivot(index="country", columns="stages", values="count").fillna(0)
 
-# Plot the heatmap using Plotly
+# heatmap
 fig2 = px.imshow(
     investment_pivot,
     title="Number of Significant Investments per Funding Stage by Country",
     labels={"x": "Funding Stage", "y": "Country", "color": "Number of Firms"},
-    color_continuous_scale="Blues",  # Optional: change color scale
+    color_continuous_scale="Blues", 
 )
-
-# Adjust layout for better presentation
 fig2.update_xaxes(tickangle=45, tickmode='array')
 fig2.update_layout(
     xaxis_title="Funding Stage",
@@ -153,34 +143,29 @@ fig2.update_layout(
     yaxis=dict(tickmode='array'),
     coloraxis_colorbar=dict(title="Number of Firms")
 )
-
-# Assuming the dataframe 'df_deals' is already defined
 deal_size_by_stage = df_deals.groupby("roundType")["amount"].mean().reset_index(name="avg_deal_size")
 
-# Plot the bar chart using Plotly with Cividis color palette
 fig3 = px.bar(
     deal_size_by_stage,
     x="roundType",
     y="avg_deal_size",
     title="Average Deal Size Per Funding Stage",
     labels={"roundType": "Funding Stage", "avg_deal_size": "Average Deal Size"},
-    color="roundType",  # Optional: color by funding stage for better visualization
-    color_continuous_scale="Cividis"  # Set color scale to Cividis
+    color="roundType",  
+    color_continuous_scale="Cividis" 
 )
-
-# Assuming the dataframe 'df_di' and 'df_deals' are already defined
-# Identify leading investors per stage
+# identify leading investors per stage
 lead_investors_per_stage = df_di.groupby(["roundType", "investorName"]).agg(
     lead_count=("leadInvestorFlag", "sum"),
     total_deals=("dealId", "count")
 ).reset_index()
 
-# Sort and select top investors per stage
+# sort and select top investors per stage
 top_lead_investors = lead_investors_per_stage.sort_values(
     by=["roundType", "lead_count", "total_deals"], ascending=[True, False, False]
-).groupby("roundType").head(3)  # Top 3 investors per stage
+).groupby("roundType").head(3) 
 
-# Influence on funding success
+# influence on funding success
 funding_data = df_deals.merge(df_di, on="id", how="left")
 investor_funding = funding_data.groupby("investorName").agg(
     total_funding=("amount", "sum"),
@@ -188,10 +173,8 @@ investor_funding = funding_data.groupby("investorName").agg(
     total_deals=("id", "count")
 ).reset_index()
 
-# Filter for leading investors
+# filter for leading investors
 top_investors = investor_funding[investor_funding["investorName"].isin(top_lead_investors["investorName"])]
-
-# Plot using Plotly
 fig4 = px.bar(
     top_investors.sort_values("total_funding", ascending=False),
     x="investorName",
@@ -201,8 +184,6 @@ fig4 = px.bar(
     labels={"investorName": "Investor Name", "total_funding": "Total Funding Received"},
     color_continuous_scale="Inferno_r"
 )
-
-# Adjust layout for better readability
 fig4.update_layout(
     xaxis_title="Investor Name",
     yaxis_title="Total Funding Received",
