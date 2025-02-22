@@ -192,10 +192,13 @@ fig4.update_layout(
 )
 
 # ------------------------------------ REGIONAL INSIGHTS ------------------------------------
+
+cats = pd.read_csv('agg_data/top10cats.csv')
+avg_deal = pd.read_csv('agg_data/avg_deal.csv')
+cat_pref = pd.read_csv('agg_data/cat_pref.csv')
+hq_trends = pd.read_csv('agg_data/hq_trends.csv')
+
 # top investment categories
-cats = df_deals.groupby('primaryTag').agg({'amount': 'sum'}).reset_index()
-cats = cats.sort_values(by='amount', ascending=False)
-cats = cats.head(10) # top 10
 top10_cats = px.bar(cats,
              x='amount', y='primaryTag', 
              color = 'primaryTag',
@@ -205,59 +208,19 @@ top10_cats = px.bar(cats,
 top10_cats.update_layout(showlegend=False)  
 
 # average deal size
-avg_deal = df_deals.groupby('ecosystemName')['amount'].mean().reset_index()
 avg_reg = px.bar(avg_deal, x='ecosystemName', y='amount', 
              labels={'ecosystemName':'Region', 'amount':'Average Investment Volume'},
              title='Average Deal Size by Region',)
 avg_reg.update_xaxes(categoryorder='total descending')
 
 # total investment vol and category
-cat_pref = df_deals.groupby(['ecosystemName', 'primaryTag'])['amount'].sum().reset_index()
-cat_pref = cat_pref.sort_values(by='amount', ascending=False)
-top20 = df_deals.groupby('primaryTag')['amount'].sum().sort_values(ascending=False)
-top20 = top20.head(25).index
-cat_pref = cat_pref[cat_pref['primaryTag'].isin(top20)]
-
 inv_reg = px.bar(cat_pref, x='ecosystemName', y='amount', color='primaryTag',
              labels={'ecosystemName':'Region', 'amount':'Investment Volume', 'primaryTag':'Categories (Top 25)'},
              title='Category Preferences and Investment Volume by Region', barmode='stack',
              color_discrete_sequence=px.colors.qualitative.Dark24,)
 inv_reg.update_xaxes(categoryorder='total descending')
 
-# map visualisation by key headquarter regions
-# longitude and latitude of major regions of interest
-hq_loc = {
-    'toronto': [43.6511, -79.3470],
-    'montreal': [45.5019, -73.5674],
-    'waterloo': [43.4643, -80.5204],
-    'ottawa': [45.4235, -75.6979],
-    'quebec': [46.8131, -71.2075],
-    'vancouver': [49.2827, -123.1207],
-    'calgary': [51.0447, -114.0719],
-    'edmonton': [53.5461, -113.4937],
-    'winnipeg': [49.8954, -97.1385],
-}
-
-df_loc = pd.DataFrame(hq_loc).T.reset_index()
-df_loc.columns = ['headquarters', 'lat', 'lon']
-
-# grabs a subset of deals with relevant headquarters, finds its total investment vol and top inv categories
-hq_trends = df_deals.groupby(['headquarters', 'primaryTag'])['amount'].sum().reset_index()
-
-# finds top 3 categories for each major headquarter location
-top_cats = []
-for hq in hq_trends['headquarters']:
-        hq_data = hq_trends[hq_trends['headquarters'] == hq]
-        top4 = hq_data.sort_values(by='amount', ascending=False).head(4)
-        top_cats.append(top4)
-top4_df = pd.concat(top_cats, ignore_index=True)
-
-hq_trends = top4_df.merge(df_loc, on='headquarters', how='left')
-num_deals = df_deals.groupby('headquarters').size().reset_index(name='num_deals') # counts number of deals for each hq
-hq_trends = hq_trends.merge(num_deals, on='headquarters', how='left')
-hq_trends = hq_trends.dropna(subset=['lat', 'lon']) # drops irrelevant headquarter locations
-hq_trends = hq_trends.sort_values(by="amount", ascending=False)
-
+# the very epic dot map!!! (key headquarter regions)
 map_hq = px.scatter_map(
     hq_trends,
     lat='lat',
@@ -272,7 +235,7 @@ map_hq = px.scatter_map(
     size_max=60, 
     zoom=3
 )
-
+# center the map
 map_hq.update_layout(
     mapbox_style='carto-positron',
     mapbox_center={"lat": 56, "lon": -106}, 
