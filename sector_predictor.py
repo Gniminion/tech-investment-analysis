@@ -45,6 +45,7 @@ print(cat_trends['invGrowth'].quantile(0.75))
 # target of high growth sector is a sector with more than 45% investment growth (top 0.6 quantile) and no decrease of deals from the prev year
 cat_trends['hiGrowth'] = ((cat_trends['invGrowth'] > cat_trends['invGrowth'].quantile(0.6)) & (cat_trends['dealGrowth'] >= 0)).astype(int)
 print(cat_trends)
+cat_trends.to_csv("training_data.csv", index=False)  
 cat_trends['hiGrowth'].value_counts().plot(kind='bar', color=['#3366FF', 'orange'], title='Class Distribution')
 plt.show()
 

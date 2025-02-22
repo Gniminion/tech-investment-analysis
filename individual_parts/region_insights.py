@@ -286,5 +286,3 @@ app.layout = html.Div([
 if __name__ == '__main__':
     print("App is starting")
     app.run_server(debug=True)
-
-
