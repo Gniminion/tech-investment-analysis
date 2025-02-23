@@ -10,42 +10,15 @@ from sklearn.metrics import mean_absolute_error, accuracy_score, precision_score
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import StratifiedKFold
 
-df_deals = pd.read_csv("cleaned_data_v2/cleaned_deals.csv") 
-
-# some other groupings identified during model training
-def clean_cat(cat):
-    if ('metaverse' in cat):
-        return 'ar'
-    if ('paas' in cat):
-        return 'platform'
-    if ('geospatial' in cat):
-        return 'geotech'
-    return cat
-
-df_deals['primaryTag'] = df_deals['primaryTag'].apply(clean_cat)
-
-# creates a new dataframe of categories (sectors) with associated total investments and number of deals per year
-cat_trends = df_deals.groupby(['primaryTag', 'year']).agg(
-    totalInv=('amount', 'sum'), 
-    numDeals=('amount', 'count')
-).reset_index()
-
-# calculates growth rate for both number of deals and investment amount
-cat_trends['invGrowth'] = cat_trends.groupby('primaryTag')['totalInv'].pct_change()
-cat_trends['dealGrowth'] = cat_trends.groupby('primaryTag')['numDeals'].pct_change()
-
-cat_trends.replace([np.inf, -np.inf], np.nan, inplace=True)
-cat_trends = cat_trends.dropna(subset=['invGrowth', 'dealGrowth']) # drop the first years where theres no growth rate indicators
-
+cat_trends = pd.read_csv('training_data.csv', index_col=0)
 # checking the quantiles for a good eval point
+print(cat_trends)
 print(cat_trends['invGrowth'].quantile(0.5))
 print(cat_trends['invGrowth'].quantile(0.6))
 print(cat_trends['invGrowth'].quantile(0.75))
 
 # target of high growth sector is a sector with more than 45% investment growth (top 0.6 quantile) and no decrease of deals from the prev year
 cat_trends['hiGrowth'] = ((cat_trends['invGrowth'] > cat_trends['invGrowth'].quantile(0.6)) & (cat_trends['dealGrowth'] >= 0)).astype(int)
-print(cat_trends)
-cat_trends.to_csv("training_data.csv", index=False)  
 cat_trends['hiGrowth'].value_counts().plot(kind='bar', color=['#3366FF', 'orange'], title='Class Distribution')
 plt.show()
 
@@ -141,7 +114,8 @@ for sector in cat_trends['primaryTag'].unique():
     prev_deals_growth = last_row['dealGrowth']
     X_future = pd.DataFrame([[prev_year, prev_inv, prev_deals, prev_inv_growth, prev_deals_growth]],
                             columns=['year', 'totalInv', 'numDeals', 'invGrowth', 'dealGrowth'])
-    X_future = X_future.to_numpy()
+    # also apply scaler
+    X_future = scaler.transform(X_future)
     hi_or_lo = mod.predict(X_future)[0]
     pred.append((sector, 2025, hi_or_lo))
 
@@ -154,6 +128,7 @@ print(hg_sectors)
 X = cat_trends.drop(columns=['totalInv', 'primaryTag', 'hiGrowth'])
 y = cat_trends['totalInv']
 
+# test split and train
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 mod = RandomForestRegressor(n_estimators=100, random_state=42)
 mod.fit(X_train, y_train)

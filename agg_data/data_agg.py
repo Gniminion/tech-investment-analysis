@@ -1,20 +1,46 @@
 
 import pandas as pd
+import numpy as np
 
 # ***** HOW WE AGGREGATED THE DATA WE NEEDED FOR VISUALISATION AND MODELING ****** # 
 
-df_comp = pd.read_csv("cleaned_data_v2/cleaned_companies.csv") # remove path names and change to og data name once were done
+df_comp = pd.read_csv("cleaned_data_v2/cleaned_companies.csv") # remove path names and change to some comment about raw data here after we're done
 df_di = pd.read_csv("cleaned_data_v2/cleaned_dealInvestor.csv")
 df_deals = pd.read_csv("cleaned_data_v2/cleaned_deals.csv") 
 df_invs = pd.read_csv("cleaned_data_v2/cleaned_investor.csv")
 df_eco = pd.read_csv("cleaned_data_v2/cleaned_ecosystem.csv")  
 
 # ------------------------------------ DATA CLEANING ------------------------------------ 
-# add any code we had to make our cleaned datas here
+# !!!!! add any code we had to make our cleaned datas here !!!!!!
+
+# INITIAL CLEANING (STANDARDISING ALL DATASET FORMATS)
+# DEALS cleaning:
+# drop dupes
+df_deals.drop_duplicates(subset=['id', 'companyId'], inplace=True)
+# decided to drop secondary ecosystem as there are a lot of missing values so not too helpful for analysis
+# df_deals.drop('ecosystemSecondary', axis=1, inplace=True) 
+# fill missing values with unknown
+df_deals['headquarters'].fillna('unknown', inplace=True)
+df_deals['leadInvestors'].fillna('unknown', inplace=True)
+df_deals['investors'].fillna('unknown', inplace=True)
+# filling in the small amount of missing values in categories with mode category
+df_deals['primaryTag'].fillna(df_deals['primaryTag'].mode()[0], inplace=True)
+# converting to date time format
+df_deals['date'] = pd.to_datetime(df_deals['date'], errors='coerce')
+df_deals['year'] = pd.to_numeric(df_deals['year'], errors='coerce')
+# replacing unknown series with unknown
+df_deals['roundType'] = df_deals['roundType'].replace({'Series ?': 'unknown'})
+# converting values to lower case (except yearQuarter formats)
+for column in df_deals.select_dtypes(include=['object']).columns:
+    if column != 'yearQuarter':
+        df_deals[column] = df_deals[column].str.lower()
+        
+# ECOSYSTEM CLEANING (to lowercase):
+for column in df_eco.select_dtypes(include=['object']).columns:
+      df_eco[column] = df_eco[column].str.lower()
 
 # identify all possible categories
 print(df_deals['primaryTag'].unique())
-
 # clean categories
 fix = { # with identification help from genAI
     "blochchain": "blockchain",
@@ -49,7 +75,7 @@ def clean_cat(cat):
     cat = cat.replace('-', ' ')
     cat = cat.strip() 
     cat = fix.get(cat, cat) 
-    if ('manu' in cat):
+    if ('manu' in cat): # some other mappings identified after performing eda
         return 'manufacturing'
     if ('software' in cat):
         return 'software development'
@@ -57,6 +83,12 @@ def clean_cat(cat):
         return 'healthtech'
     if ('transportation' in cat):
         return 'transportation'
+    if ('metaverse' in cat):
+        return 'ar'
+    if ('paas' in cat):
+        return 'platform'
+    if ('geospatial' in cat):
+        return 'geotech'
     return cat
 
 # make categories clean for all the relevant dfs
@@ -77,7 +109,6 @@ df_di['ecosystemName'] = df_di['ecosystemName'].apply(clean_eco)
 
 # identify all possible headquarters
 print(df_deals['headquarters'].unique())
-
 # clean headquarters data
 fix = { 
     "montréal": "montreal",
@@ -99,6 +130,7 @@ def clean_hq(hq):
 df_deals['headquarters'] = df_deals['headquarters'].apply(clean_hq)
 df_di['headquarters'] = df_di['headquarters'].apply(clean_hq)
 
+# renaming the stages for better grouping
 def clean_stage(stage):
     mapping = {
         "pre seed": "Pre-Seed",
@@ -114,6 +146,43 @@ def clean_stage(stage):
     }
     return mapping.get(stage.lower(), "Other")
 df_deals["roundType"] = df_deals["roundType"].apply(clean_stage)
+
+#------------------------------------ INVESTMENTS OVER TIME ------------------------------------
+# sum the investment amount
+temp_deals = df_deals[(df_deals['year'] >= 2019) & (df_deals['year'] <= 2024)]
+inv_trends = temp_deals.groupby('year')['amount'].sum().reset_index()
+inv_trends.to_csv("agg_data/inv_trends.csv")
+
+# number of deals per year
+deal_vol = temp_deals.groupby('year')['id'].count().reset_index()
+deal_vol.to_csv("agg_data/deal_vol.csv")
+
+# deal size categories
+def categorize_deal(amount):
+    if amount < 100000:
+        return '<$100K'
+    elif 1000000 <= amount < 5000000:
+        return '$1M-$5M'
+    elif amount >= 100000000:
+        return '$100M+'
+    else:
+        return 'Other'
+
+temp_deals['ds_category'] = temp_deals['amount'].apply(categorize_deal)
+ds_trends = temp_deals.groupby(['year', 'ds_category'])['amount'].sum().reset_index()
+ds_trends.to_csv("agg_data/ds_trends.csv")
+
+# merge deals with ecosystems
+df_deals_regs = temp_deals.merge(df_eco, on='ecosystemName', how='left')
+reg_trends = df_deals_regs.groupby(['year', 'province'])['amount'].sum().reset_index()
+reg_trends.to_csv("agg_data/reg_trends.csv")
+
+# data cleaning
+valid_deals = df_deals_regs [(df_deals_regs ['roundType'] != 'Unknown') & (~df_deals_regs['province'].isna())]
+valid_deals['date'] = pd.to_datetime(valid_deals['date'])
+valid_deals['year'] = valid_deals['date'].dt.year
+valid_deals =valid_deals[['year', 'amount', 'province', 'roundType']]
+valid_deals.to_csv("agg_data/valid_deals.csv")
 
 #------------------------------------ FUNDING STAGES  ------------------------------------
 
@@ -131,12 +200,58 @@ deal_size.to_csv("agg_data/deal_size.csv")
 deal_trends = df_deals.groupby(["year", "roundType"]).agg({"id": "count", "amount": "sum"}).reset_index()
 deal_trends.to_csv("agg_data/deal_trends.csv")
 
+#------------------------------------ INVESTOR BEHAVIOUR ------------------------------------
+# categorize US & Canada, group others as Other International
+country_map = {
+    "usa": "USA",
+    "canada": "Canada"
+}
+df_invs["country_grouped"] = df_invs["country"].map(country_map)
+df_invs["country_grouped"] = df_invs["country_grouped"].fillna("Other International")
+
+# count number of investment firms by country group
+invs_counts = df_invs.groupby("country_grouped").size().reset_index(name="count")
+invs_counts.to_csv("agg_data/invs_counts.csv")
+
+# heatmap pivioting
+invs_counts = df_invs.explode("stages").groupby(["country", "stages"]).size().reset_index(name="count") # splitting the stages for countries
+invs_counts = invs_counts[invs_counts["count"] >= 5] # filter out small count investors
+invs_pivot = invs_counts.pivot(index="country", columns="stages", values="count").fillna(0)
+invs_pivot.to_csv("agg_data/invs_pivot.csv")
+
+# deal size by stage
+ds_by_stage = df_deals.groupby("roundType")["amount"].mean().reset_index(name="avg_deal_size")
+ds_by_stage.to_csv("agg_data/ds_by_stage.csv")
+
+# identify leading investors per stage
+lead_invs_stage = df_di.groupby(["roundType", "investorName"]).agg(
+    lead_count=("leadInvestorFlag", "sum"),
+    total_deals=("dealId", "count")
+).reset_index()
+
+# sort and select top investors per stage
+top_lead_invs = lead_invs_stage.sort_values(
+    by=["roundType", "lead_count", "total_deals"], ascending=[True, False, False]
+).groupby("roundType").head(3) # top 3
+
+# influence on funding success
+fund_data = df_deals.merge(df_di, on="id", how="left")
+investor_funding = fund_data.groupby("investorName").agg(
+    total_funding=("amount", "sum"), # success metrics
+    avg_funding=("amount", "mean"),
+    total_deals=("id", "count")
+).reset_index()
+
+# filter for leading investors
+top_invs = investor_funding[investor_funding["investorName"].isin(top_lead_invs["investorName"])]
+top_invs.to_csv('agg_data/top_invs.csv')
+
 # ------------------------------------ REGIONAL INSIGHTS ------------------------------------
 # top investment categories
 cats = df_deals.groupby('primaryTag').agg({'amount': 'sum'}).reset_index()
 cats = cats.sort_values(by='amount', ascending=False)
 cats = cats.head(10) # top 10
-cats.to_csv('agg_data/top10cats.csv')
+cats.to_csv('agg_data/top10_cats.csv')
 
 # average deal size
 avg_deal = df_deals.groupby('ecosystemName')['amount'].mean().reset_index()
@@ -185,3 +300,19 @@ hq_trends = hq_trends.merge(num_deals, on='headquarters', how='left')
 hq_trends = hq_trends.dropna(subset=['lat', 'lon']) # drops irrelevant headquarter locations
 hq_trends = hq_trends.sort_values(by="amount", ascending=False)
 hq_trends.to_csv("agg_data/hq_trends.csv")
+
+# ------------------------------------ PREDICTION MODEL TRAINING DATA ------------------------------------
+# creates a new dataframe of categories (sectors) with associated total investments and number of deals per year
+cat_trends = df_deals.groupby(['primaryTag', 'year']).agg(
+    totalInv=('amount', 'sum'), 
+    numDeals=('amount', 'count')
+).reset_index()
+
+# calculates growth rate for both number of deals and investment amount
+cat_trends['invGrowth'] = cat_trends.groupby('primaryTag')['totalInv'].pct_change()
+cat_trends['dealGrowth'] = cat_trends.groupby('primaryTag')['numDeals'].pct_change()
+
+cat_trends.replace([np.inf, -np.inf], np.nan, inplace=True) # filters out invalid inf values
+cat_trends = cat_trends.dropna(subset=['invGrowth', 'dealGrowth']) # drop the first years where theres no growth rate indicators
+
+cat_trends.to_csv("training_data.csv")  

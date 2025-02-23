@@ -1,0 +1,2723 @@
+,year,amount,province,roundType
+0,2019,420000,ontario,Other
+1,2019,50000,ontario,Seed
+2,2019,14595900,british columbia,Other
+3,2019,125000,ontario,Seed
+4,2019,199035,ontario,Other
+5,2019,90229200,british columbia,Other
+6,2019,70000,british columbia,Other
+7,2019,4000000,british columbia,Series B
+8,2019,6634500,british columbia,Other
+9,2019,30000,ontario,Seed
+10,2019,30000,ontario,Seed
+11,2019,30000,ontario,Seed
+12,2019,30000,ontario,Seed
+13,2019,1200000,british columbia,Other
+14,2019,20462000,british columbia,Other
+15,2019,3000000,british columbia,Seed
+16,2019,3000000,british columbia,Series A
+17,2019,53076000,british columbia,Series B
+18,2019,13269000,british columbia,Other
+19,2019,19903500,british columbia,Series B
+20,2019,14000000,ontario,Series A
+21,2019,62364300,ontario,Other
+22,2019,1350000,alberta,Other
+23,2019,3000000,british columbia,Other
+24,2019,250000,british columbia,Series C
+25,2019,15000000,alberta,Other
+26,2019,25000,ontario,Seed
+27,2019,0,british columbia,Seed
+28,2019,6200000,ontario,Series A
+29,2019,0,british columbia,Series B
+30,2019,31314840,ontario,Series B
+31,2019,7165260,british columbia,Seed
+32,2019,5853000,british columbia,Other
+33,2019,50000,ontario,Other
+34,2019,50000,ontario,Seed
+35,2019,35000000,ontario,Other
+36,2019,0,ontario,Seed
+37,2019,3300000,ontario,Seed
+38,2019,1770000,british columbia,Seed
+39,2019,100000,british columbia,Series A
+40,2019,250000,british columbia,Other
+41,2019,2270000,british columbia,Other
+42,2019,1200000,ontario,Seed
+43,2019,5971050,british columbia,Seed
+44,2019,200000,british columbia,Series B
+45,2019,7032570,british columbia,Series A
+46,2019,6000000,british columbia,Seed
+47,2019,18576600,british columbia,Series A
+48,2019,1000000,british columbia,Seed
+49,2019,7710000,ontario,Other
+50,2019,1200000,british columbia,Series B
+51,2019,2678000,british columbia,Other
+52,2019,3410133,ontario,Other
+53,2019,95000000,british columbia,Other
+54,2019,2000000,british columbia,Seed
+55,2019,750000,ontario,Other
+56,2019,53076000,ontario,Other
+57,2019,55000000,ontario,Series B
+58,2019,250000,ontario,Other
+59,2019,1500000,ontario,Other
+60,2019,1900000,british columbia,Seed
+61,2019,3317250,british columbia,Seed
+62,2019,30000,ontario,Seed
+63,2019,39807,ontario,Seed
+64,2019,2750000,alberta,Series B
+65,2019,3000000,alberta,Seed
+66,2019,17000000,british columbia,Series A
+67,2019,17249700,british columbia,Series A
+68,2019,200000,ontario,Seed
+69,2019,800000,british columbia,Seed
+70,2019,2800000,british columbia,Other
+71,2019,0,alberta,Other
+72,2019,26538000,british columbia,Series B
+73,2019,13269000,british columbia,Series C
+74,2019,1326900,british columbia,Other
+75,2019,50000,ontario,Other
+76,2019,5000,ontario,Other
+77,2019,4500000,alberta,Seed
+78,2019,4000000,alberta,Seed
+79,2019,8500000,british columbia,Series A
+80,2019,5000,ontario,Other
+81,2019,2000000,british columbia,Other
+82,2019,1000000,alberta,Seed
+83,2019,11278650,british columbia,Other
+84,2019,20000,ontario,Seed
+85,2019,0,british columbia,Other
+86,2019,0,alberta,Seed
+87,2019,33172500,alberta,Series B
+88,2019,250000,british columbia,Series D+
+89,2019,0,ontario,Seed
+90,2019,120000,ontario,Other
+91,2019,1143000,british columbia,Other
+92,2019,150000,british columbia,Other
+93,2019,15000000,british columbia,Other
+94,2019,2000000,british columbia,Other
+95,2019,684451,alberta,Seed
+96,2019,3500000,ontario,Other
+97,2019,26550000,british columbia,Other
+98,2019,199035,ontario,Seed
+99,2019,3500000,ontario,Series A
+100,2019,1700000,ontario,Other
+101,2019,7961400,alberta,Series A
+102,2019,4500000,british columbia,Series A
+103,2019,1592280,ontario,Seed
+104,2019,331725000,british columbia,Series D+
+105,2019,59710500,british columbia,Series C
+106,2019,0,british columbia,Other
+107,2019,1406514,alberta,Other
+108,2019,3200000,british columbia,Seed
+109,2019,0,alberta,Other
+110,2019,14595900,british columbia,Other
+111,2019,5572980,ontario,Seed
+112,2019,70000000,british columbia,Series C
+113,2019,50000,ontario,Other
+114,2019,50000,ontario,Other
+115,2019,3500000,british columbia,Seed
+116,2019,50000,ontario,Other
+117,2019,3317250,alberta,Series B
+118,2019,15000000,alberta,Series A
+119,2019,0,ontario,Seed
+120,2019,1000000,british columbia,Series B
+121,2019,3317250,british columbia,Other
+122,2019,0,ontario,Other
+123,2019,21893850,british columbia,Other
+124,2019,1000000,ontario,Other
+125,2019,4000000,alberta,Seed
+126,2019,150000,british columbia,Seed
+127,2019,40000000,alberta,Series C
+128,2019,700000,alberta,Seed
+129,2019,1500000,ontario,Seed
+130,2019,7944599,british columbia,Other
+131,2019,5971050,ontario,Other
+132,2019,9951750,british columbia,Seed
+133,2021,126000000,british columbia,Other
+134,2019,0,alberta,Series A
+135,2019,1960000,alberta,Seed
+136,2019,9951750,british columbia,Other
+137,2019,174421,ontario,Other
+138,2019,1600000,british columbia,Seed
+139,2019,5214717,alberta,Seed
+140,2019,4660000,british columbia,Other
+141,2019,1000000,british columbia,Seed
+142,2019,20000000,british columbia,Series B
+143,2019,5307600,ontario,Seed
+144,2019,5000000,british columbia,Seed
+145,2019,10000000,ontario,Series A
+146,2019,3980700,alberta,Series B
+147,2019,14595900,alberta,Series B
+148,2019,86248500,british columbia,Series D+
+149,2019,15000000,ontario,Other
+150,2020,0,ontario,Seed
+151,2020,0,british columbia,Other
+152,2020,62785300,quebec,Series D+
+153,2020,47900000,quebec,Other
+154,2020,54200000,ontario,Series C
+155,2020,27100000,british columbia,Series A
+156,2020,1800000,quebec,Seed
+157,2020,30000,ontario,Seed
+158,2020,40650,ontario,Seed
+159,2020,44715000,british columbia,Series A
+160,2020,10000000,ontario,Series A
+161,2020,2032500,quebec,Other
+162,2020,500000,ontario,Seed
+163,2020,20000000,british columbia,Series B
+164,2020,1440376,quebec,Other
+165,2020,500000,ontario,Seed
+166,2020,600000,quebec,Other
+167,2020,6775000,ontario,Seed
+168,2020,14227500,quebec,Series A
+169,2020,3403607,alberta,Seed
+170,2020,1000000,british columbia,Seed
+171,2020,2303500,british columbia,Seed
+172,2020,120000000,ontario,Series C
+173,2020,59500000,british columbia,Series B
+174,2020,1800000,quebec,Seed
+175,2020,2000000,quebec,Seed
+176,2020,0,british columbia,Seed
+177,2020,2660000,ontario,Series A
+178,2020,700000,quebec,Seed
+179,2020,29810000,ontario,Series B
+180,2020,74525000,ontario,Series D+
+181,2020,0,british columbia,Series A
+182,2020,20325000,alberta,Other
+183,2020,11517500,ontario,Series A
+184,2020,5400000,british columbia,Series B
+185,2020,1100000,alberta,Other
+186,2020,1800000,ontario,Seed
+187,2020,15800000,british columbia,Series B
+188,2020,1250000,alberta,Seed
+189,2020,0,ontario,Other
+190,2020,4963875,british columbia,Other
+191,2020,6500000,quebec,Other
+192,2020,84744000,quebec,Series A
+193,2020,1100000,ontario,Other
+194,2020,3000000,ontario,Seed
+195,2020,5046606,british columbia,Other
+196,2020,800000,quebec,Seed
+197,2020,9959250,british columbia,Series A
+198,2020,75000,british columbia,Other
+199,2020,500000,ontario,Seed
+200,2020,1200000,quebec,Seed
+201,2020,1200000,quebec,Seed
+202,2020,1355000,ontario,Seed
+203,2020,1600000,british columbia,Seed
+204,2020,50000,ontario,Other
+205,2020,100000,ontario,Other
+206,2020,6097500,british columbia,Series A
+207,2020,2000000,alberta,Seed
+208,2020,0,quebec,Seed
+209,2020,5200000,ontario,Series A
+210,2020,25000000,british columbia,Other
+211,2020,6500000,quebec,Series B
+212,2020,750000,british columbia,Seed
+213,2020,8130000,british columbia,Series A
+214,2020,9300000,british columbia,Series A
+215,2020,250000,ontario,Seed
+216,2020,28455000,ontario,Series A
+217,2020,500000,ontario,Other
+218,2020,2700000,ontario,Seed
+219,2020,6100000,british columbia,Seed
+220,2020,32475000,british columbia,Series D+
+221,2020,20325000,alberta,Series A
+222,2020,300000,quebec,Other
+223,2020,1000000,ontario,Seed
+224,2020,1660891,ontario,Other
+225,2020,175000,ontario,Seed
+226,2020,63700000,ontario,Series B
+227,2020,3500000,quebec,Series C
+228,2020,600000,quebec,Other
+229,2020,3000000,ontario,Seed
+230,2020,1250000,quebec,Other
+231,2020,280000,british columbia,Other
+232,2020,28455000,british columbia,Series A
+233,2020,120000,ontario,Other
+234,2020,120000,ontario,Other
+235,2020,120000,ontario,Other
+236,2020,120000,ontario,Other
+237,2020,120000,ontario,Other
+238,2020,2125000,ontario,Seed
+239,2020,710000,ontario,Series C
+240,2020,0,quebec,Seed
+241,2020,600000,quebec,Other
+242,2020,4065000,ontario,Seed
+243,2020,57650100,british columbia,Other
+244,2020,70600000,quebec,Series C
+245,2020,50000,ontario,Other
+246,2020,1575000,quebec,Other
+247,2020,500000,ontario,Seed
+248,2020,2000000,ontario,Other
+249,2020,0,quebec,Seed
+250,2020,3400000,ontario,Seed
+251,2020,9485000,ontario,Series A
+252,2020,3230000,ontario,Other
+253,2020,15000000,quebec,Other
+254,2020,9100000,ontario,Seed
+255,2020,75000,ontario,Other
+256,2020,12000000,british columbia,Series A
+257,2020,1670000,ontario,Seed
+258,2020,0,alberta,Seed
+259,2020,0,quebec,Series B
+260,2020,12000000,quebec,Seed
+261,2020,30000,ontario,Other
+262,2020,30000,ontario,Seed
+263,2020,3200000,alberta,Seed
+264,2020,750000,quebec,Seed
+265,2020,9700000,quebec,Series D+
+266,2020,0,ontario,Seed
+267,2020,7900000,ontario,Seed
+268,2020,125000,quebec,Other
+269,2020,10840000,ontario,Series A
+270,2020,39295000,ontario,Series C
+271,2020,7500000,british columbia,Series B
+272,2020,8130000,ontario,Series A
+273,2020,9141652,ontario,Other
+274,2020,100000000,ontario,Series C
+275,2020,1750000,ontario,Seed
+276,2020,0,ontario,Other
+277,2020,9180106,ontario,Series A
+278,2020,73000000,alberta,Series B
+279,2020,4183500,british columbia,Other
+280,2020,50000,alberta,Seed
+281,2020,1000000,quebec,Other
+282,2020,7000000,british columbia,Series A
+283,2020,10000000,british columbia,Other
+284,2020,62330000,quebec,Other
+285,2020,9800000,british columbia,Seed
+286,2020,75000,quebec,Other
+287,2020,7500000,ontario,Other
+288,2020,13500000,ontario,Series A
+289,2020,900000,quebec,Series C
+290,2020,30000,ontario,Seed
+291,2020,25745000,british columbia,Series A
+292,2020,775000,ontario,Other
+293,2020,2811625,british columbia,Seed
+294,2020,1005000,quebec,Other
+295,2020,10000000,ontario,Series A
+296,2020,1000000,ontario,Seed
+297,2020,144000000,british columbia,Series B
+298,2020,6601110,ontario,Other
+299,2020,223306,quebec,Other
+300,2020,1693750,ontario,Seed
+301,2020,29800000,ontario,Series C
+302,2020,3500000,british columbia,Seed
+303,2020,3850000,quebec,Series A
+304,2020,3900000,quebec,Series A
+305,2020,0,quebec,Other
+306,2020,500000,british columbia,Other
+307,2020,38000000,quebec,Series B
+308,2020,0,ontario,Seed
+309,2020,2800000,ontario,Seed
+310,2020,1400000,ontario,Seed
+311,2020,1200000,quebec,Other
+312,2020,3468052,ontario,Seed
+313,2020,0,quebec,Seed
+314,2020,11500000,quebec,Series A
+315,2020,3371600,ontario,Series B
+316,2020,6000000,quebec,Seed
+317,2020,3000000,british columbia,Series A
+318,2020,680000,alberta,Other
+319,2020,10000000,ontario,Series A
+320,2020,0,ontario,Other
+321,2020,15000,ontario,Other
+322,2020,15000,ontario,Other
+323,2020,500000,ontario,Seed
+324,2020,52000000,british columbia,Other
+325,2020,16200000,quebec,Series A
+326,2020,1500000,ontario,Seed
+327,2020,750000,ontario,Series A
+328,2020,2500000,quebec,Seed
+329,2020,315000,quebec,Other
+330,2020,8900000,quebec,Other
+331,2020,2100000,ontario,Other
+332,2020,2750000,ontario,Other
+333,2020,3000000,alberta,Other
+334,2020,1500000,british columbia,Other
+335,2020,15000000,ontario,Series A
+336,2020,6000000,ontario,Other
+337,2020,5000000,ontario,Series A
+338,2020,1200000,british columbia,Other
+339,2020,230350000,quebec,Series D+
+340,2020,50000,ontario,Other
+341,2020,100000,ontario,Other
+342,2020,50000,ontario,Other
+343,2020,6500000,ontario,Series A
+344,2020,1240000,british columbia,Other
+345,2020,6900000,quebec,Other
+346,2020,5000000,quebec,Other
+347,2020,0,ontario,Other
+348,2020,2000000,british columbia,Seed
+349,2020,10000000,british columbia,Series B
+350,2020,8000000,ontario,Series A
+351,2020,13000000,british columbia,Other
+352,2020,1480000,quebec,Seed
+353,2020,6890000,quebec,Other
+354,2020,700000,alberta,Seed
+355,2020,665337,quebec,Other
+356,2020,3500000,ontario,Seed
+357,2020,1300000,british columbia,Seed
+358,2020,6000000,alberta,Series A
+359,2020,7600000,alberta,Series A
+360,2020,345000,ontario,Seed
+361,2020,1250000,ontario,Other
+362,2020,9400000,ontario,Series A
+363,2020,3000000,ontario,Seed
+364,2020,5102523,ontario,Other
+365,2020,9503200,ontario,Other
+366,2020,5200000,quebec,Seed
+367,2020,0,ontario,Seed
+368,2020,800000,ontario,Seed
+369,2020,6500000,ontario,Seed
+370,2020,0,british columbia,Seed
+371,2020,0,british columbia,Seed
+372,2020,0,alberta,Seed
+373,2020,1500000,alberta,Seed
+374,2020,0,quebec,Seed
+375,2020,0,quebec,Seed
+376,2020,0,quebec,Seed
+377,2020,4000000,ontario,Series B
+378,2020,8688640,ontario,Series D+
+379,2020,11516479,ontario,Other
+380,2020,500000,british columbia,Seed
+381,2020,50000,quebec,Other
+382,2020,29999,quebec,Seed
+383,2020,0,ontario,Seed
+384,2020,0,british columbia,Other
+385,2020,3000000,ontario,Seed
+386,2020,7000000,ontario,Seed
+387,2020,3975000,ontario,Other
+388,2020,2000000,ontario,Seed
+389,2020,400000,quebec,Seed
+390,2020,3750000,quebec,Other
+391,2020,6775000,ontario,Series A
+392,2020,54200000,british columbia,Other
+393,2020,120000,quebec,Seed
+394,2020,2000000,quebec,Seed
+395,2020,7200000,ontario,Series B
+396,2020,1400000,british columbia,Seed
+397,2020,1505000,alberta,Seed
+398,2020,177084,ontario,Other
+399,2020,2333333,british columbia,Other
+400,2020,120000,quebec,Seed
+401,2020,250000,quebec,Seed
+402,2020,2600000,british columbia,Other
+403,2020,1900000,alberta,Seed
+404,2020,118756,ontario,Other
+405,2020,0,ontario,Series A
+406,2020,43800000,ontario,Series B
+407,2020,4500000,ontario,Other
+408,2020,650000,ontario,Seed
+409,2020,0,ontario,Seed
+410,2020,6000000,ontario,Seed
+411,2020,16000000,british columbia,Series B
+412,2020,2682400,ontario,Other
+413,2020,2400000,ontario,Seed
+414,2020,11500000,ontario,Other
+415,2020,66000000,alberta,Series C
+416,2020,0,alberta,Seed
+417,2020,2640000,ontario,Seed
+418,2020,3500000,ontario,Other
+419,2020,4700000,ontario,Seed
+420,2020,169375,ontario,Seed
+421,2020,600000,ontario,Seed
+422,2020,4000000,ontario,Series A
+423,2020,11500000,quebec,Series A
+424,2020,203250,ontario,Seed
+425,2020,2000000,ontario,Seed
+426,2020,15000000,ontario,Series A
+427,2020,4742500,ontario,Seed
+428,2020,0,ontario,Other
+429,2020,6775000,ontario,Series A
+430,2020,4200000,british columbia,Seed
+431,2020,0,quebec,Other
+432,2020,5611279,ontario,Other
+433,2020,10000000,alberta,Series A
+434,2020,509013,ontario,Seed
+435,2020,9899489,ontario,Seed
+436,2020,6500000,british columbia,Series A
+437,2020,21400000,british columbia,Series A
+438,2020,2500000,ontario,Seed
+439,2020,10497317,ontario,Series A
+440,2020,2000000,british columbia,Other
+441,2020,500000,british columbia,Series A
+442,2020,350000,ontario,Seed
+443,2020,120000,quebec,Seed
+444,2020,4000000,quebec,Series A
+445,2020,8130000,ontario,Series A
+446,2020,5300000,ontario,Series A
+447,2020,70000000,ontario,Series C
+448,2020,0,quebec,Other
+449,2020,250675000,quebec,Other
+450,2020,0,british columbia,Other
+451,2020,2710000,ontario,Seed
+452,2020,815000,alberta,Series A
+453,2020,200000,quebec,Seed
+454,2020,6600000,ontario,Series C
+455,2020,6844911,british columbia,Series A
+456,2020,6500000,quebec,Seed
+457,2020,1000000,british columbia,Seed
+458,2020,11600000,british columbia,Other
+459,2020,18000000,quebec,Other
+460,2020,29488800,british columbia,Other
+461,2020,15000000,quebec,Series C
+462,2020,100000000,ontario,Other
+463,2020,3385000,quebec,Other
+464,2020,5200000,ontario,Seed
+465,2020,0,ontario,Series A
+466,2020,814560,ontario,Other
+467,2020,1000000,british columbia,Seed
+468,2020,8130000,ontario,Seed
+469,2020,13550000,ontario,Series B
+470,2020,0,british columbia,Series A
+471,2020,27100000,ontario,Series A
+472,2020,2000000,ontario,Other
+473,2020,1800000,quebec,Seed
+474,2020,2500000,ontario,Other
+475,2020,640000,ontario,Seed
+476,2020,0,ontario,Other
+477,2020,5144745,british columbia,Seed
+478,2020,0,quebec,Series A
+479,2020,8807500,ontario,Series A
+480,2020,222000000,ontario,Series D+
+481,2020,7113750,ontario,Seed
+482,2020,16343079,quebec,Other
+483,2020,130000,alberta,Other
+484,2020,0,ontario,Seed
+485,2020,10840000,british columbia,Series A
+486,2020,5000000,ontario,Other
+487,2020,20000000,alberta,Series A
+488,2020,8000000,quebec,Series A
+489,2020,14500000,ontario,Series A
+490,2020,2500000,british columbia,Seed
+491,2020,4000000,british columbia,Series B
+492,2020,2000000,quebec,Other
+493,2020,3261165,ontario,Seed
+494,2020,333025,ontario,Other
+495,2020,3500000,quebec,Seed
+496,2020,0,british columbia,Seed
+497,2020,6000000,ontario,Other
+498,2020,0,ontario,Series C
+499,2020,3929500,ontario,Seed
+500,2020,2610000,ontario,Seed
+501,2020,33875000,ontario,Series A
+502,2020,8265500,ontario,Series A
+503,2020,20000000,ontario,Other
+504,2020,50000,alberta,Other
+505,2020,790064,quebec,Other
+506,2020,7992600,ontario,Other
+507,2020,7500000,quebec,Seed
+508,2020,0,quebec,Series A
+509,2020,4700000,quebec,Other
+510,2020,2150163,quebec,Series A
+511,2020,1000000,ontario,Other
+512,2020,5000000,ontario,Series A
+513,2020,3350000,ontario,Seed
+514,2020,11000000,ontario,Series A
+515,2020,0,quebec,Other
+516,2020,1400000,ontario,Seed
+517,2020,4000000,quebec,Seed
+518,2020,8500000,quebec,Other
+519,2020,30000000,british columbia,Series A
+520,2020,11141000,quebec,Series A
+521,2020,2500000,ontario,Seed
+522,2020,8409225,ontario,Series A
+523,2020,6775000,ontario,Series A
+524,2020,700000,alberta,Seed
+525,2020,16887296,quebec,Series B
+526,2020,0,quebec,Other
+527,2020,8000000,ontario,Seed
+528,2020,50000000,alberta,Series A
+529,2020,0,quebec,Series A
+530,2020,2170000,ontario,Seed
+531,2020,2421607,ontario,Other
+532,2020,3000000,ontario,Other
+533,2020,1761500,alberta,Seed
+534,2020,2000000,quebec,Series A
+535,2020,3995700,ontario,Other
+536,2020,300000,british columbia,Other
+537,2020,5400000,ontario,Seed
+538,2020,1000000,ontario,Other
+539,2020,0,quebec,Other
+540,2020,2000000,british columbia,Series A
+541,2020,3008309,british columbia,Other
+542,2020,11000005,quebec,Other
+543,2020,0,ontario,Seed
+544,2020,0,ontario,Seed
+545,2020,0,british columbia,Other
+546,2020,20325000,british columbia,Other
+547,2020,2300000,alberta,Seed
+548,2021,127510,ontario,Other
+549,2021,0,ontario,Other
+550,2021,100000,british columbia,Other
+551,2021,0,british columbia,Other
+552,2021,50000,alberta,Other
+553,2021,0,ontario,Other
+554,2021,0,british columbia,Series A
+555,2021,1124570,ontario,Other
+556,2021,126770000,ontario,Other
+557,2021,2965023,alberta,Other
+558,2021,317125,ontario,Other
+559,2021,20295980,british columbia,Other
+560,2021,0,ontario,Other
+561,2021,1300000,ontario,Seed
+562,2021,13500000,british columbia,Series A
+563,2021,0,british columbia,Other
+564,2021,0,ontario,Other
+565,2021,159000000,ontario,Series B
+566,2021,8300000,ontario,Series A
+567,2021,1000000,british columbia,Seed
+568,2021,76362,ontario,Other
+569,2021,3000000,ontario,Seed
+570,2021,0,british columbia,Other
+571,2021,127270,british columbia,Seed
+572,2021,2300000,ontario,Other
+573,2021,400000,ontario,Other
+574,2021,0,ontario,Other
+575,2021,1273500,ontario,Other
+576,2021,458181,alberta,Other
+577,2021,7599600,quebec,Series A
+578,2021,10000,quebec,Other
+579,2021,4200000,british columbia,Seed
+580,2021,1900000,quebec,Seed
+581,2021,11200000,ontario,Series A
+582,2021,0,ontario,Seed
+583,2021,8000000,british columbia,Seed
+584,2021,152856,british columbia,Other
+585,2021,18200000,ontario,Series A
+586,2021,500000,ontario,Other
+587,2021,152424,alberta,Other
+588,2021,6333000,ontario,Series C
+589,2021,153720,ontario,Other
+590,2021,3843000,british columbia,Other
+591,2021,319500,british columbia,Other
+592,2021,1000000,british columbia,Seed
+593,2021,0,ontario,Series A
+594,2021,128240,ontario,Other
+595,2021,153888,ontario,Seed
+596,2021,9500000,british columbia,Series A
+597,2021,640000,british columbia,Other
+598,2021,0,alberta,Seed
+599,2021,0,alberta,Other
+600,2021,1429876,quebec,Seed
+601,2021,200000,quebec,Other
+602,2021,128180,quebec,Other
+603,2021,1278300,ontario,Seed
+604,2021,7400000,alberta,Series A
+605,2021,1300000,quebec,Seed
+606,2021,76968,ontario,Other
+607,2021,164658000,ontario,Series D+
+608,2021,1300000,ontario,Other
+609,2021,894390,ontario,Other
+610,2021,0,ontario,Other
+611,2021,3400000,ontario,Seed
+612,2021,50000,ontario,Other
+613,2021,800000,british columbia,Seed
+614,2021,346318,ontario,Other
+615,2021,54000000,alberta,Series B
+616,2021,107856500,ontario,Series A
+617,2021,6500000,ontario,Seed
+618,2021,289000000,british columbia,Other
+619,2021,710000,alberta,Seed
+620,2021,23689,quebec,Other
+621,2021,56400000,ontario,Other
+622,2021,1600000,ontario,Other
+623,2021,1902900,ontario,Other
+624,2021,4000000,ontario,Other
+625,2021,3000000,ontario,Other
+626,2021,5300000,ontario,Other
+627,2021,1300000,alberta,Other
+628,2021,2500000,quebec,Other
+629,2021,152532,ontario,Other
+630,2021,18999000,alberta,Other
+631,2021,10200000,ontario,Series A
+632,2021,1250000,british columbia,Seed
+633,2021,10000000,ontario,Series A
+634,2021,2500000,ontario,Seed
+635,2021,50700000,alberta,Other
+636,2021,0,ontario,Other
+637,2021,10300000,ontario,Series A
+638,2021,25000000,ontario,Series C
+639,2021,2400000,ontario,Seed
+640,2021,4400000,british columbia,Other
+641,2021,5419290,ontario,Seed
+642,2021,12000000,ontario,Series A
+643,2021,189000,ontario,Seed
+644,2021,737275,ontario,Other
+645,2021,5900000,british columbia,Seed
+646,2021,49681,alberta,Seed
+647,2021,1294401,british columbia,Other
+648,2021,3007200,ontario,Other
+649,2021,10000000,ontario,Other
+650,2021,20000000,british columbia,Series B
+651,2021,2000000,ontario,Seed
+652,2021,2600000,british columbia,Other
+653,2021,20000,ontario,Other
+654,2021,50644,ontario,Other
+655,2021,980000,british columbia,Other
+656,2021,180626,alberta,Other
+657,2021,1476779,quebec,Other
+658,2021,50644,quebec,Other
+659,2021,378780,british columbia,Other
+660,2021,21472700,british columbia,Series A
+661,2021,4420850,british columbia,Other
+662,2021,37893000,british columbia,Series B
+663,2021,82329000,ontario,Series C
+664,2021,107000000,ontario,Series B
+665,2021,7000000,alberta,Series A
+666,2021,0,quebec,Other
+667,2021,4500000,ontario,Seed
+668,2021,0,ontario,Other
+669,2021,0,ontario,Other
+670,2021,2906050,ontario,Seed
+671,2021,34198200,ontario,Series A
+672,2021,37911000,british columbia,Series A
+673,2021,12500000,ontario,Series A
+674,2021,50000000,ontario,Series C
+675,2021,2000000,british columbia,Seed
+676,2021,3008309,british columbia,Seed
+677,2021,6500000,quebec,Seed
+678,2021,0,ontario,Other
+679,2021,1074377,ontario,Other
+680,2021,7970534,ontario,Seed
+681,2021,0,ontario,Seed
+682,2021,173452,alberta,Other
+683,2021,0,ontario,Seed
+684,2021,31137500,ontario,Series B
+685,2021,1245500,ontario,Other
+686,2021,2500000,quebec,Seed
+687,2021,0,british columbia,Seed
+688,2021,2493000,british columbia,Seed
+689,2021,4700000,british columbia,Seed
+690,2021,124580000,british columbia,Series D+
+691,2021,13700000,ontario,Series A
+692,2021,0,ontario,Seed
+693,2021,6000000,ontario,Seed
+694,2021,0,ontario,Seed
+695,2021,5100000,ontario,Other
+696,2021,6000000,ontario,Seed
+697,2021,0,ontario,Seed
+698,2021,2512400,british columbia,Other
+699,2021,213000000,quebec,Series D+
+700,2021,0,quebec,Seed
+701,2021,821378,ontario,Other
+702,2021,2300000,ontario,Seed
+703,2021,14000000,quebec,Series C
+704,2021,1000000,quebec,Seed
+705,2021,385245500,british columbia,Series C
+706,2021,0,ontario,Seed
+707,2021,825000,british columbia,Seed
+708,2021,0,ontario,Other
+709,2021,2000000,ontario,Seed
+710,2021,1330000,ontario,Seed
+711,2021,750000,ontario,Seed
+712,2021,184200,british columbia,Other
+713,2021,0,british columbia,Seed
+714,2021,1660000,british columbia,Seed
+715,2021,900000,quebec,Other
+716,2021,0,ontario,Other
+717,2021,147360,ontario,Other
+718,2021,147360,ontario,Other
+719,2021,0,ontario,Other
+720,2021,22000000,ontario,Series A
+721,2021,0,ontario,Other
+722,2021,128550,ontario,Other
+723,2021,100000000,quebec,Series B
+724,2021,0,ontario,Other
+725,2021,4912000,quebec,Seed
+726,2021,25000,quebec,Other
+727,2021,335000,ontario,Seed
+728,2021,0,alberta,Other
+729,2021,7500000,ontario,Series A
+730,2021,0,ontario,Seed
+731,2021,2087600,alberta,Seed
+732,2021,0,quebec,Seed
+733,2021,5000000,quebec,Seed
+734,2021,20697279,ontario,Series A
+735,2021,1228000,ontario,Seed
+736,2021,4503004,ontario,Other
+737,2021,125000000,ontario,Series C
+738,2021,0,ontario,Other
+739,2021,0,alberta,Other
+740,2021,8000000,ontario,Series A
+741,2021,3320000,ontario,Seed
+742,2021,20876000,ontario,Series A
+743,2021,6000000,british columbia,Other
+744,2021,0,alberta,Seed
+745,2021,300000000,ontario,Series C
+746,2021,136400000,british columbia,Series D+
+747,2021,1500000,quebec,Seed
+748,2021,3000000,ontario,Seed
+749,2021,11000000,british columbia,Series A
+750,2021,3806800,alberta,Seed
+751,2021,7429400,alberta,Other
+752,2021,20000000,ontario,Series A
+753,2021,0,ontario,Seed
+754,2021,4912000,british columbia,Series A
+755,2021,1700000,ontario,Seed
+756,2021,10438000,ontario,Other
+757,2021,0,ontario,Seed
+758,2021,1500000,ontario,Other
+759,2021,0,ontario,Seed
+760,2021,100000,ontario,Other
+761,2021,0,british columbia,Seed
+762,2021,1000000,british columbia,Other
+763,2021,0,british columbia,Other
+764,2021,1250000,quebec,Seed
+765,2021,6300000,ontario,Seed
+766,2021,10000000,ontario,Series A
+767,2021,12280000,ontario,Series B
+768,2021,300000,ontario,Other
+769,2021,4420800,quebec,Seed
+770,2021,14736000,ontario,Series A
+771,2021,30700,british columbia,Other
+772,2021,184200,british columbia,Other
+773,2021,700000,alberta,Other
+774,2021,130000000,ontario,Series C
+775,2021,1785083,british columbia,Other
+776,2021,6000000,british columbia,Seed
+777,2021,1700000,ontario,Seed
+778,2021,0,british columbia,Seed
+779,2021,2400000,ontario,Seed
+780,2021,18420000,ontario,Series A
+781,2021,0,british columbia,Other
+782,2021,0,alberta,Other
+783,2021,2396913,ontario,Seed
+784,2021,3684000,ontario,Seed
+785,2021,18420000,quebec,Series A
+786,2021,2000000,ontario,Seed
+787,2021,0,british columbia,Seed
+788,2021,0,alberta,Series A
+789,2021,2087600,quebec,Seed
+790,2021,4025843,ontario,Other
+791,2021,1228000,ontario,Seed
+792,2021,245600000,ontario,Series C
+793,2021,98240000,british columbia,Series B
+794,2021,11543200,quebec,Series A
+795,2021,0,ontario,Other
+796,2021,15000000,quebec,Seed
+797,2021,75000,ontario,Other
+798,2021,122800000,ontario,Series B
+799,2021,9600000,quebec,Series A
+800,2021,36100000,ontario,Series A
+801,2021,35000000,ontario,Series B
+802,2021,3806800,british columbia,Other
+803,2021,9701200,british columbia,Other
+804,2021,3315600,ontario,Seed
+805,2021,2500000,british columbia,Seed
+806,2021,70000,quebec,Other
+807,2021,7368000,ontario,Seed
+808,2021,27000000,british columbia,Series B
+809,2021,300000,alberta,Other
+810,2021,0,alberta,Other
+811,2021,285000,alberta,Seed
+812,2021,6200000,ontario,Series A
+813,2021,73000000,british columbia,Series C
+814,2021,184200,quebec,Other
+815,2021,737000,ontario,Other
+816,2021,1470000,ontario,Seed
+817,2021,476109600,british columbia,Series D+
+818,2021,750000,ontario,Seed
+819,2021,100000000,ontario,Series A
+820,2021,0,quebec,Other
+821,2021,60000000,ontario,Series B
+822,2021,965000,british columbia,Other
+823,2021,6000000,british columbia,Seed
+824,2021,0,ontario,Seed
+825,2021,76000000,quebec,Series B
+826,2021,0,ontario,Seed
+827,2021,33156000,quebec,Series B
+828,2021,21000000,ontario,Series B
+829,2021,375000000,ontario,Series D+
+830,2021,73500000,quebec,Other
+831,2021,0,ontario,Seed
+832,2021,3700000,ontario,Seed
+833,2021,9210000,ontario,Seed
+834,2021,60000000,ontario,Series A
+835,2021,225000000,quebec,Series D+
+836,2021,16000000,ontario,Other
+837,2021,34384000,ontario,Series C
+838,2021,2800000,ontario,Seed
+839,2021,500000,ontario,Seed
+840,2021,0,british columbia,Seed
+841,2021,154975000,british columbia,Series D+
+842,2021,122800000,quebec,Series C
+843,2021,6000000,quebec,Series A
+844,2019,197475000,ontario,Series D+
+845,2021,314418000,ontario,Series D+
+846,2021,175000000,quebec,Other
+847,2021,35000000,quebec,Other
+848,2021,12750000,quebec,Series A
+849,2021,2000000,quebec,Seed
+850,2021,23000000,quebec,Series B
+851,2021,1585541,quebec,Seed
+852,2021,1250000,quebec,Other
+853,2021,3000000,quebec,Seed
+854,2021,19100000,quebec,Series B
+855,2021,10000,quebec,Other
+856,2021,15000,quebec,Other
+857,2021,0,ontario,Series B
+858,2021,31348971,ontario,Series A
+859,2021,778000,ontario,Other
+860,2021,163000000,ontario,Series D+
+861,2021,226000000,ontario,Series C
+862,2021,125000000,ontario,Series B
+863,2021,12500000,ontario,Series A
+864,2021,2511382,ontario,Seed
+865,2021,125000000,ontario,Series B
+866,2021,268000000,ontario,Series C
+867,2021,44000000,ontario,Series B
+868,2021,1000000,ontario,Seed
+869,2021,5600000,ontario,Seed
+870,2021,5600000,ontario,Seed
+871,2021,43900000,ontario,Series B
+872,2021,10000000,ontario,Other
+873,2021,2700000,ontario,Seed
+874,2021,6280000,ontario,Series A
+875,2021,11270000,ontario,Series B
+876,2021,0,ontario,Seed
+877,2021,25000000,ontario,Series A
+878,2021,3021047,ontario,Seed
+879,2021,377000,ontario,Other
+880,2021,621940,ontario,Seed
+881,2021,87777,ontario,Other
+882,2021,1000,ontario,Other
+883,2021,900000,ontario,Seed
+884,2021,14000000,alberta,Other
+885,2021,5600000,alberta,Seed
+886,2021,2500000,alberta,Other
+887,2021,100000,alberta,Other
+888,2021,6200000,british columbia,Series A
+889,2021,2500000,british columbia,Seed
+890,2021,25000000,british columbia,Other
+891,2021,1075621,british columbia,Other
+892,2021,100000000,british columbia,Series B
+893,2021,17700000,british columbia,Series A
+894,2021,1500000,british columbia,Other
+895,2021,0,alberta,Other
+896,2021,0,alberta,Other
+897,2021,5500000,quebec,Seed
+898,2021,2450000,ontario,Other
+899,2021,300000,ontario,Other
+900,2021,7500000,other,Series A
+901,2021,24900000,ontario,Series A
+902,2021,5000000,quebec,Other
+903,2021,2800000,other,Seed
+904,2021,1500000,quebec,Seed
+905,2021,7700000,british columbia,Seed
+906,2021,0,alberta,Other
+907,2021,1300000,alberta,Seed
+908,2021,2500000,alberta,Seed
+909,2019,0,quebec,Seed
+910,2019,0,quebec,Other
+911,2019,0,quebec,Other
+912,2019,0,quebec,Other
+913,2019,0,quebec,Other
+914,2019,0,quebec,Other
+915,2019,0,quebec,Other
+916,2019,0,quebec,Other
+917,2019,0,quebec,Other
+918,2019,0,quebec,Other
+919,2019,0,quebec,Seed
+920,2019,0,quebec,Other
+921,2019,0,quebec,Other
+922,2019,0,quebec,Other
+923,2019,0,quebec,Other
+924,2019,0,quebec,Seed
+925,2019,80000,ontario,Other
+926,2019,0,ontario,Seed
+927,2019,340635,ontario,Seed
+928,2019,0,quebec,Other
+929,2019,0,quebec,Other
+930,2019,1850000,ontario,Other
+931,2019,600000,quebec,Other
+932,2019,0,quebec,Other
+933,2019,2642300,ontario,Other
+934,2019,59451750,quebec,Series B
+935,2019,106112,ontario,Other
+936,2019,477504,quebec,Seed
+937,2019,3049708,ontario,Seed
+938,2019,17000000,quebec,Series A
+939,2019,1128582,ontario,Seed
+940,2019,22946692,ontario,Series B
+941,2019,0,quebec,Other
+942,2019,15912360,quebec,Series A
+943,2019,4641105,quebec,Series B
+944,2019,53000000,ontario,Series C
+945,2019,657050,ontario,Other
+946,2019,500000,ontario,Seed
+947,2019,0,quebec,Seed
+948,2019,1310000,ontario,Seed
+949,2019,1729200,ontario,Other
+950,2019,1000000,quebec,Seed
+951,2019,20960,ontario,Other
+952,2019,3930000,quebec,Seed
+953,2019,10000,quebec,Other
+954,2019,27127247,ontario,Series B
+955,2019,1100000,ontario,Seed
+956,2019,157398,ontario,Other
+957,2019,157398,ontario,Other
+958,2019,1400000,quebec,Seed
+959,2019,157398,ontario,Other
+960,2019,157398,ontario,Other
+961,2019,157398,quebec,Other
+962,2019,157398,ontario,Other
+963,2019,13310900,ontario,Other
+964,2019,1984290,ontario,Seed
+965,2019,0,quebec,Other
+966,2019,55477380,ontario,Series D+
+967,2019,175000,ontario,Seed
+968,2019,4500000,quebec,Seed
+969,2019,3158880,ontario,Seed
+970,2019,850000,ontario,Other
+971,2019,593189,ontario,Other
+972,2019,15000000,quebec,Series C
+973,2019,46117208,ontario,Series B
+974,2019,3300000,ontario,Seed
+975,2019,40037,ontario,Seed
+976,2019,200093,ontario,Seed
+977,2019,3200000,ontario,Seed
+978,2019,1333950,ontario,Seed
+979,2019,50000,quebec,Other
+980,2019,5350000,ontario,Seed
+981,2019,0,quebec,Seed
+982,2019,0,quebec,Seed
+983,2019,1150000,ontario,Other
+984,2019,13314,quebec,Other
+985,2019,17349150,ontario,Series A
+986,2019,1336525,quebec,Seed
+987,2019,400000,quebec,Other
+988,2019,1750000,ontario,Seed
+989,2019,7250000,ontario,Series A
+990,2019,0,quebec,Seed
+991,2019,3329663,ontario,Seed
+992,2019,2000000,ontario,Seed
+993,2019,15000000,ontario,Series A
+994,2019,22100000,ontario,Other
+995,2019,2000000,quebec,Seed
+996,2019,1900000,quebec,Other
+997,2019,1345525,quebec,Other
+998,2019,0,quebec,Seed
+999,2019,671000,ontario,Other
+1000,2019,5000000,ontario,Series A
+1001,2019,100000,ontario,Seed
+1002,2019,9699948,ontario,Series A
+1003,2019,672473,quebec,Other
+1004,2019,100000,ontario,Seed
+1005,2019,3366388,ontario,Seed
+1006,2019,125000,quebec,Other
+1007,2019,42000000,ontario,Series B
+1008,2019,125000,quebec,Other
+1009,2019,0,quebec,Seed
+1010,2019,891359,ontario,Series B
+1011,2019,1500000,ontario,Seed
+1012,2019,1679419,ontario,Other
+1013,2019,100000000,ontario,Other
+1014,2019,671875,ontario,Seed
+1015,2019,2697900,ontario,Seed
+1016,2019,2702900,ontario,Other
+1017,2019,1500000,ontario,Seed
+1018,2019,270870,ontario,Other
+1019,2019,338588,quebec,Other
+1020,2019,200872,quebec,Other
+1021,2019,200000,quebec,Other
+1022,2019,2003625,ontario,Seed
+1023,2019,0,quebec,Seed
+1024,2019,0,quebec,Other
+1025,2019,0,quebec,Seed
+1026,2019,0,quebec,Other
+1027,2019,40349,ontario,Seed
+1028,2019,20000000,ontario,Series B
+1029,2019,53650000,quebec,Series B
+1030,2019,1000000,quebec,Other
+1031,2019,0,quebec,Seed
+1032,2019,9887625,quebec,Series B
+1033,2019,32000000,ontario,Series A
+1034,2019,300000,ontario,Other
+1035,2019,6700000,ontario,Series A
+1036,2019,4593225,quebec,Seed
+1037,2019,157141,ontario,Other
+1038,2019,19600000,quebec,Series B
+1039,2019,2250000,quebec,Series A
+1040,2019,0,quebec,Other
+1041,2019,1350000,ontario,Other
+1042,2019,9570538,ontario,Other
+1043,2019,5253800,ontario,Seed
+1044,2019,0,quebec,Seed
+1045,2019,51000000,quebec,Series C
+1046,2019,5223060,quebec,Series A
+1047,2019,41102775,ontario,Series B
+1048,2019,500000,ontario,Seed
+1049,2019,3000000,ontario,Series A
+1050,2019,156580,ontario,Other
+1051,2019,45804150,ontario,Series C
+1052,2019,24865110,quebec,Series B
+1053,2019,4908492,ontario,Seed
+1054,2019,250000,quebec,Seed
+1055,2019,2614500,ontario,Seed
+1056,2019,196928,ontario,Other
+1057,2019,196928,quebec,Seed
+1058,2019,500000,ontario,Seed
+1059,2019,1500000,ontario,Seed
+1060,2019,6569975,ontario,Series A
+1061,2019,1313995,ontario,Seed
+1062,2019,73263,ontario,Other
+1063,2019,525000,ontario,Seed
+1064,2019,65000000,ontario,Series B
+1065,2019,0,quebec,Seed
+1066,2019,300000,quebec,Seed
+1067,2019,5325383,ontario,Seed
+1068,2019,1190565,ontario,Other
+1069,2019,27727875,quebec,Series B
+1070,2019,0,quebec,Other
+1071,2019,9200000,ontario,Series A
+1072,2019,531020,ontario,Seed
+1073,2019,1500000,east coast,Other
+1074,2019,12000000,ontario,Series A
+1075,2019,12346215,ontario,Series B
+1076,2019,199732,ontario,Seed
+1077,2019,199988,quebec,Other
+1078,2019,8317813,quebec,Series A
+1079,2019,490000,quebec,Other
+1080,2019,150000,ontario,Other
+1081,2019,0,quebec,Seed
+1082,2019,250000,ontario,Other
+1083,2019,400000,quebec,Other
+1084,2019,1864730,ontario,Seed
+1085,2019,1100000,quebec,Seed
+1086,2019,44967210,ontario,Other
+1087,2019,3440190,quebec,Seed
+1088,2019,158046,ontario,Other
+1089,2019,0,quebec,Seed
+1090,2019,158046,quebec,Other
+1091,2019,158046,ontario,Seed
+1092,2019,0,quebec,Seed
+1093,2019,0,quebec,Other
+1094,2019,200000000,quebec,Series B
+1095,2019,14500000,ontario,Series A
+1096,2019,49056450,ontario,Other
+1097,2019,66302,ontario,Seed
+1098,2019,10000000,ontario,Series A
+1099,2019,2121856,ontario,Seed
+1100,2019,22700000,quebec,Series B
+1101,2019,8209544,quebec,Seed
+1102,2019,2654100,quebec,Seed
+1103,2019,0,quebec,Seed
+1104,2019,600000,quebec,Other
+1105,2019,20000000,quebec,Series B
+1106,2019,2665880,quebec,Seed
+1107,2019,1850000,ontario,Other
+1108,2019,3600000,ontario,Seed
+1109,2019,13225,ontario,Other
+1110,2019,15000,ontario,Other
+1111,2019,435683,ontario,Other
+1112,2019,1313680,quebec,Seed
+1113,2019,500000,ontario,Seed
+1114,2019,25000000,ontario,Series D+
+1115,2019,7444485,quebec,Series B
+1116,2019,2350026,quebec,Seed
+1117,2019,0,quebec,Other
+1118,2019,0,quebec,Other
+1119,2019,0,quebec,Seed
+1120,2019,0,quebec,Seed
+1121,2019,600000,quebec,Seed
+1122,2019,921095,ontario,Other
+1123,2019,22500000,quebec,Series A
+1124,2019,328962,ontario,Seed
+1125,2019,90000,ontario,Other
+1126,2019,0,quebec,Series D+
+1127,2019,10000000,quebec,Series A
+1128,2019,9207450,ontario,Series A
+1129,2019,53000000,quebec,Series A
+1130,2019,265014000,ontario,Series A
+1131,2019,5586687,ontario,Series A
+1132,2019,13271800,ontario,Series A
+1133,2019,1991625,ontario,Other
+1134,2019,1000000,quebec,Seed
+1135,2019,13301150,ontario,Other
+1136,2019,25000000,ontario,Series B
+1137,2019,1394358,ontario,Seed
+1138,2019,1800000,quebec,Seed
+1139,2019,1202315,quebec,Other
+1140,2019,1329290,ontario,Other
+1141,2019,20297968,ontario,Seed
+1142,2019,527734,quebec,Seed
+1143,2019,85756,quebec,Seed
+1144,2019,5692254,ontario,Seed
+1145,2019,1270828,quebec,Other
+1146,2019,7904700,quebec,Seed
+1147,2019,988087,ontario,Other
+1148,2019,620000,ontario,Seed
+1149,2019,25000,quebec,Other
+1150,2019,750000,quebec,Other
+1151,2019,3816298,quebec,Other
+1152,2019,0,quebec,Series D+
+1153,2019,657395,ontario,Other
+1154,2019,150381200,ontario,Series D+
+1155,2019,1235427,quebec,Other
+1156,2019,650225,ontario,Other
+1157,2020,0,other,Seed
+1158,2020,52252,other,Seed
+1159,2020,0,ontario,Seed
+1160,2021,13000000,other,Series A
+1161,2020,326358,other,Other
+1162,2019,0,ontario,Other
+1163,2019,0,ontario,Series C
+1164,2019,0,other,Other
+1165,2020,0,other,Other
+1166,2020,0,ontario,Other
+1167,2019,0,ontario,Other
+1168,2019,3900000,ontario,Seed
+1169,2019,0,ontario,Other
+1170,2020,0,ontario,Seed
+1171,2019,0,ontario,Other
+1172,2020,0,ontario,Other
+1173,2019,0,other,Other
+1174,2021,27549500,other,Series C
+1175,2019,2611140,ontario,Seed
+1176,2019,0,ontario,Series D+
+1177,2019,14575770,ontario,Series D+
+1178,2020,534672,ontario,Other
+1179,2019,333196,ontario,Seed
+1180,2019,105727,ontario,Seed
+1181,2020,42500,ontario,Other
+1182,2019,300000,other,Seed
+1183,2019,8511783,ontario,Seed
+1184,2020,39189,other,Seed
+1185,2020,1302161,other,Seed
+1186,2021,17899700,other,Other
+1187,2019,725802,other,Seed
+1188,2019,33509750,ontario,Series B
+1189,2019,140127750,other,Series B
+1190,2020,26000000,other,Other
+1191,2020,0,other,Other
+1192,2020,0,other,Other
+1193,2020,699163,ontario,Other
+1194,2019,0,ontario,Other
+1195,2019,32272,other,Other
+1196,2019,0,other,Other
+1197,2019,0,ontario,Series B
+1198,2021,1500000,other,Seed
+1199,2019,25000,other,Seed
+1200,2020,0,other,Seed
+1201,2019,200000,other,Seed
+1202,2019,0,other,Other
+1203,2021,0,other,Seed
+1204,2020,0,ontario,Series A
+1205,2020,8780038,ontario,Seed
+1206,2019,950000,east coast,Seed
+1207,2020,989216,east coast,Seed
+1208,2019,0,other,Seed
+1209,2019,1331350,other,Seed
+1210,2019,0,ontario,Other
+1211,2019,39473080,ontario,Series B
+1212,2020,167878,ontario,Other
+1213,2019,0,ontario,Other
+1214,2019,2647440,other,Other
+1215,2019,25000000,other,Series B
+1216,2019,0,ontario,Other
+1217,2019,0,ontario,Seed
+1218,2019,1331090,ontario,Series B
+1219,2020,6000000,ontario,Series B
+1220,2019,500000,other,Seed
+1221,2021,0,ontario,Series A
+1222,2019,0,other,Other
+1223,2019,2790552,ontario,Other
+1224,2021,30000000,other,Other
+1225,2020,0,other,Other
+1226,2019,1329400,ontario,Seed
+1227,2021,3174625,other,Seed
+1228,2019,5335020,ontario,Series A
+1229,2019,259000,other,Seed
+1230,2020,330000,other,Seed
+1231,2020,357187,ontario,Seed
+1232,2021,19084125,ontario,Series A
+1233,2019,0,other,Seed
+1234,2021,23000000,ontario,Seed
+1235,2019,0,ontario,Other
+1236,2020,0,ontario,Seed
+1237,2019,0,ontario,Other
+1238,2019,0,other,Seed
+1239,2019,16300000,ontario,Series A
+1240,2020,23000000,ontario,Series B
+1241,2020,0,other,Other
+1242,2020,0,other,Other
+1243,2019,500000,ontario,Other
+1244,2020,3439338,ontario,Seed
+1245,2020,0,ontario,Seed
+1246,2020,0,ontario,Other
+1247,2019,150823,other,Seed
+1248,2021,0,other,Seed
+1249,2020,13396050,ontario,Series A
+1250,2019,0,ontario,Other
+1251,2020,5330000,other,Seed
+1252,2019,197052,ontario,Other
+1253,2019,0,ontario,Other
+1254,2020,2000000,ontario,Seed
+1255,2019,0,other,Other
+1256,2019,1474031,other,Other
+1257,2019,0,british columbia,Other
+1258,2019,0,british columbia,Other
+1259,2019,0,british columbia,Other
+1260,2019,0,quebec,Other
+1261,2019,0,ontario,Other
+1262,2019,150000,alberta,Seed
+1263,2019,0,british columbia,Seed
+1264,2019,0,ontario,Other
+1265,2019,13000000,british columbia,Other
+1266,2019,1000000,ontario,Seed
+1267,2019,120000,british columbia,Seed
+1268,2019,1200000,british columbia,Other
+1269,2019,10000,british columbia,Other
+1270,2019,650000,british columbia,Seed
+1271,2019,707000,british columbia,Seed
+1272,2019,0,british columbia,Other
+1273,2019,0,british columbia,Seed
+1274,2019,0,british columbia,Other
+1275,2019,0,british columbia,Other
+1276,2019,1000000,alberta,Seed
+1277,2019,0,british columbia,Seed
+1278,2019,200000,british columbia,Other
+1279,2019,30000,east coast,Seed
+1280,2019,50000,british columbia,Other
+1281,2019,0,ontario,Other
+1282,2019,0,quebec,Other
+1283,2019,2500000,british columbia,Series B
+1284,2019,50000,british columbia,Other
+1285,2019,0,alberta,Seed
+1286,2019,30000000,quebec,Other
+1287,2019,2200000,british columbia,Series C
+1288,2019,150000,ontario,Seed
+1289,2019,0,british columbia,Other
+1290,2019,50000,british columbia,Seed
+1291,2019,4500000,british columbia,Other
+1292,2019,105000,british columbia,Other
+1293,2019,550000,british columbia,Seed
+1294,2019,46000,ontario,Seed
+1295,2019,4600000,quebec,Seed
+1296,2019,70000,british columbia,Other
+1297,2019,1000000,british columbia,Other
+1298,2019,0,alberta,Seed
+1299,2019,30000,british columbia,Seed
+1300,2019,200000,east coast,Seed
+1301,2019,1700000,british columbia,Seed
+1302,2019,2000000,british columbia,Seed
+1303,2019,500000,alberta,Series A
+1304,2019,5200000,ontario,Seed
+1305,2019,100000,british columbia,Seed
+1306,2020,0,british columbia,Other
+1307,2020,0,british columbia,Other
+1308,2020,0,british columbia,Other
+1309,2020,0,quebec,Other
+1310,2020,0,quebec,Other
+1311,2020,0,quebec,Other
+1312,2020,0,quebec,Seed
+1313,2020,0,ontario,Other
+1314,2020,0,ontario,Seed
+1315,2020,30000,ontario,Seed
+1316,2020,30000,ontario,Seed
+1317,2020,30000,ontario,Seed
+1318,2020,450000,ontario,Seed
+1319,2020,100000,ontario,Seed
+1320,2020,2000000,quebec,Seed
+1321,2020,0,british columbia,Seed
+1322,2020,15000000,british columbia,Series A
+1323,2020,2500000,quebec,Seed
+1324,2020,1500000,ontario,Seed
+1325,2020,0,alberta,Other
+1326,2020,500000,quebec,Seed
+1327,2020,0,british columbia,Other
+1328,2020,0,british columbia,Seed
+1329,2020,2500000,british columbia,Other
+1330,2020,516000,ontario,Seed
+1331,2020,650000,british columbia,Seed
+1332,2020,950000,ontario,Seed
+1333,2020,6000000,british columbia,Seed
+1334,2020,156000,british columbia,Seed
+1335,2020,0,british columbia,Other
+1336,2020,350000,british columbia,Other
+1337,2020,25000,east coast,Seed
+1338,2020,870000,ontario,Other
+1339,2020,200000,british columbia,Seed
+1340,2020,600000,british columbia,Other
+1341,2020,30000,quebec,Other
+1342,2020,0,quebec,Seed
+1343,2020,0,british columbia,Other
+1344,2020,10000000,ontario,Series A
+1345,2020,400000,alberta,Other
+1346,2020,160000,quebec,Other
+1347,2020,0,british columbia,Other
+1348,2020,830000,british columbia,Seed
+1349,2020,0,quebec,Other
+1350,2020,182000,british columbia,Seed
+1351,2020,0,british columbia,Other
+1352,2020,102000,british columbia,Seed
+1353,2020,100000,british columbia,Seed
+1354,2020,0,british columbia,Seed
+1355,2020,100000,quebec,Seed
+1356,2020,4800000,ontario,Other
+1357,2020,4900000,british columbia,Series D+
+1358,2020,1200000,alberta,Seed
+1359,2020,0,alberta,Seed
+1360,2020,600000,ontario,Other
+1361,2020,0,ontario,Series B
+1362,2020,156000,quebec,Seed
+1363,2020,4000000,ontario,Series A
+1364,2020,100000,quebec,Other
+1365,2020,0,ontario,Seed
+1366,2020,35000000,quebec,Series B
+1367,2020,0,ontario,Other
+1368,2020,0,british columbia,Other
+1369,2020,0,quebec,Other
+1370,2020,0,british columbia,Other
+1371,2020,0,quebec,Other
+1372,2020,0,quebec,Other
+1373,2020,0,quebec,Other
+1374,2020,3500000,british columbia,Seed
+1375,2020,0,british columbia,Other
+1376,2020,100000,british columbia,Seed
+1377,2020,0,ontario,Other
+1378,2020,100000,british columbia,Other
+1379,2020,0,quebec,Seed
+1380,2020,25000,ontario,Other
+1381,2020,1000000,ontario,Other
+1382,2020,0,ontario,Seed
+1383,2020,8000000,quebec,Other
+1384,2020,180000,british columbia,Other
+1385,2020,0,ontario,Other
+1386,2020,125000,east coast,Seed
+1387,2020,225000,ontario,Seed
+1388,2020,885000,ontario,Other
+1389,2021,0,ontario,Seed
+1390,2021,1000000,british columbia,Seed
+1391,2021,350000,quebec,Other
+1392,2021,580000,alberta,Other
+1393,2021,156000,alberta,Seed
+1394,2021,1500000,british columbia,Seed
+1395,2021,0,british columbia,Seed
+1396,2021,6000000,quebec,Seed
+1397,2021,2000000,british columbia,Series A
+1398,2021,1600000,ontario,Seed
+1399,2021,3750000,east coast,Seed
+1400,2021,1000000,east coast,Seed
+1401,2021,150000,quebec,Seed
+1402,2021,110000,east coast,Other
+1403,2021,25000000,quebec,Series A
+1404,2021,25042100,quebec,Series B
+1405,2021,4000000,quebec,Seed
+1406,2021,37600000,quebec,Other
+1407,2021,2300000,ontario,Series A
+1408,2019,3250000,ontario,Seed
+1409,2019,0,ontario,Seed
+1410,2019,250000,ontario,Seed
+1411,2019,4000000,ontario,Seed
+1412,2019,0,ontario,Seed
+1413,2019,2000000,ontario,Seed
+1414,2019,2000000,ontario,Seed
+1415,2019,36500,ontario,Other
+1416,2019,2000000,ontario,Seed
+1417,2019,3500000,ontario,Seed
+1418,2019,1500000,ontario,Seed
+1419,2019,500000,ontario,Seed
+1420,2019,1500000,ontario,Seed
+1421,2019,4500000,ontario,Seed
+1422,2019,750000,ontario,Seed
+1423,2019,3500000,ontario,Seed
+1424,2019,3750000,ontario,Seed
+1425,2019,3750000,ontario,Seed
+1426,2019,2600000,ontario,Seed
+1427,2019,1000000,ontario,Seed
+1428,2019,4000000,ontario,Seed
+1429,2019,1500000,ontario,Seed
+1430,2019,0,ontario,Seed
+1431,2019,50000,ontario,Seed
+1432,2019,1600000,ontario,Seed
+1433,2019,3600000,ontario,Seed
+1434,2019,0,ontario,Seed
+1435,2019,0,ontario,Seed
+1436,2021,1000000,ontario,Other
+1437,2021,1700000,other,Seed
+1438,2021,63000000,ontario,Series B
+1439,2021,7200000,quebec,Seed
+1440,2021,266000000,british columbia,Series B
+1441,2021,3800000,ontario,Other
+1442,2021,1200000,ontario,Seed
+1443,2021,0,british columbia,Other
+1444,2021,18900000,ontario,Series B
+1445,2021,103000000,quebec,Other
+1446,2021,107000000,ontario,Series B
+1447,2021,18900000,british columbia,Other
+1448,2021,1000000,british columbia,Seed
+1449,2019,330000000,british columbia,Series D+
+1450,2021,1500000,quebec,Seed
+1451,2021,25000000,ontario,Series A
+1452,2021,120000000,ontario,Other
+1453,2021,14400000,quebec,Series A
+1454,2021,50400000,ontario,Series A
+1455,2021,3000000,ontario,Seed
+1456,2021,0,east coast,Other
+1457,2021,3760000,ontario,Seed
+1458,2021,690000,other,Seed
+1459,2021,4000000,ontario,Seed
+1460,2021,500000,east coast,Other
+1461,2021,250000,ontario,Other
+1462,2021,7600000,alberta,Seed
+1463,2021,12600000,ontario,Series A
+1464,2021,23789995,quebec,Series A
+1465,2021,6595628,quebec,Seed
+1466,2021,638820,quebec,Seed
+1467,2021,45000000,british columbia,Other
+1468,2021,1605025,british columbia,Seed
+1469,2021,2581900,british columbia,Other
+1470,2021,314273,east coast,Seed
+1471,2021,125000,ontario,Seed
+1472,2021,3130263,ontario,Seed
+1473,2021,64000000,alberta,Series B
+1474,2021,3930000,ontario,Seed
+1475,2021,65000000,ontario,Series B
+1476,2021,3150000,ontario,Seed
+1477,2021,5000000,east coast,Series A
+1478,2021,3000000,ontario,Seed
+1479,2021,8000000,ontario,Series A
+1480,2021,3250000,east coast,Seed
+1481,2021,484000,british columbia,Other
+1482,2021,1250000,ontario,Seed
+1483,2021,10000000,ontario,Other
+1484,2021,35000000,ontario,Other
+1485,2021,1900000,british columbia,Seed
+1486,2021,7990000,british columbia,Series A
+1487,2021,2500000,ontario,Seed
+1488,2021,2800000,other,Seed
+1489,2020,2900000,ontario,Seed
+1490,2021,15700000,ontario,Series A
+1491,2021,319100000,british columbia,Series D+
+1492,2021,700000,east coast,Seed
+1493,2019,3000000,ontario,Seed
+1494,2021,6700000,ontario,Series A
+1495,2021,10000000,ontario,Series A
+1496,2021,650000,quebec,Seed
+1497,2021,13500000,alberta,Series A
+1498,2021,100000000,british columbia,Other
+1499,2021,20000000,ontario,Series A
+1500,2021,320000,quebec,Other
+1501,2021,0,ontario,Seed
+1502,2021,18000000,ontario,Series A
+1503,2021,0,ontario,Other
+1504,2021,28000000,other,Series B
+1505,2021,110000,british columbia,Other
+1506,2021,60000,british columbia,Other
+1507,2021,20000,british columbia,Other
+1508,2021,7000,british columbia,Other
+1509,2021,350000,ontario,Other
+1510,2021,0,ontario,Other
+1511,2021,1880000,alberta,Other
+1512,2021,1000000,ontario,Seed
+1513,2021,0,ontario,Series A
+1514,2021,2760000,ontario,Seed
+1515,2021,10600000,alberta,Seed
+1516,2021,125000,alberta,Seed
+1517,2021,4000000,ontario,Seed
+1518,2021,822000,british columbia,Other
+1519,2021,565000,british columbia,Other
+1520,2021,0,british columbia,Seed
+1521,2021,1000000,ontario,Seed
+1522,2021,2000000,ontario,Seed
+1523,2021,48500000,ontario,Series A
+1524,2021,20000000,ontario,Series D+
+1525,2021,31000000,ontario,Series A
+1526,2021,26000000,other,Series A
+1527,2021,1600000,quebec,Seed
+1528,2021,8000000,british columbia,Seed
+1529,2021,0,quebec,Seed
+1530,2021,485000,quebec,Other
+1531,2021,1000000,ontario,Seed
+1532,2021,21000000,east coast,Series A
+1533,2021,10000000,ontario,Series A
+1534,2021,3000000,other,Seed
+1535,2021,1100000,ontario,Seed
+1536,2021,20000000,british columbia,Series A
+1537,2021,49300000,british columbia,Series B
+1538,2021,0,ontario,Other
+1539,2021,1000000,british columbia,Seed
+1540,2021,3000000,british columbia,Other
+1541,2021,2500000,alberta,Series A
+1542,2021,24000000,ontario,Series B
+1543,2021,29500000,ontario,Series A
+1544,2021,6170000,ontario,Seed
+1545,2021,2150000,quebec,Seed
+1546,2021,24000000,quebec,Series A
+1547,2021,24000000,quebec,Series A
+1548,2021,12400000,quebec,Seed
+1549,2021,37000000,ontario,Series A
+1550,2021,4200000,ontario,Seed
+1551,2019,2600000,british columbia,Seed
+1552,2021,30000000,british columbia,Series B
+1553,2021,2000000,ontario,Seed
+1554,2021,14800000,ontario,Series A
+1555,2021,17900000,british columbia,Series A
+1556,2021,20300000,east coast,Series B
+1557,2021,20000000,quebec,Other
+1558,2021,75000000,ontario,Series B
+1559,2021,600000,british columbia,Other
+1560,2021,12700000,alberta,Series A
+1561,2021,0,ontario,Seed
+1562,2021,3100000,ontario,Seed
+1563,2021,12750000,ontario,Seed
+1564,2021,2000000,ontario,Seed
+1565,2021,31000000,ontario,Series A
+1566,2021,3700000,quebec,Seed
+1567,2021,100000000,ontario,Series B
+1568,2021,43600000,ontario,Series B
+1569,2021,16500000,alberta,Series A
+1570,2019,25000000,ontario,Series B
+1571,2021,100000,british columbia,Other
+1572,2021,0,british columbia,Other
+1573,2021,6700000,alberta,Series B
+1574,2021,7000000,quebec,Series A
+1575,2021,5350000,ontario,Seed
+1576,2020,1390000,ontario,Other
+1577,2021,4000000,quebec,Seed
+1578,2021,100000000,ontario,Series B
+1579,2021,500000000,ontario,Other
+1580,2021,0,british columbia,Series A
+1581,2021,3500000,british columbia,Seed
+1582,2021,4300000,british columbia,Seed
+1583,2021,70000000,ontario,Series B
+1584,2020,5000000,ontario,Series A
+1585,2021,3800000,ontario,Seed
+1586,2021,20100000,ontario,Series A
+1587,2021,3900000,ontario,Seed
+1588,2021,189000000,ontario,Other
+1589,2019,0,other,Other
+1590,2021,1600000,british columbia,Other
+1591,2021,1500000,british columbia,Other
+1592,2021,0,ontario,Other
+1593,2021,1492658,ontario,Other
+1594,2021,2000000,ontario,Seed
+1595,2021,189000,other,Seed
+1596,2021,1200000,ontario,Other
+1597,2021,0,quebec,Seed
+1598,2021,1500000,quebec,Other
+1599,2021,25000,east coast,Other
+1600,2021,25000,east coast,Other
+1601,2021,25000,east coast,Other
+1602,2021,18000000,british columbia,Series A
+1603,2021,400000,alberta,Other
+1604,2021,400000,alberta,Other
+1605,2021,125000,other,Other
+1606,2021,0,alberta,Other
+1607,2021,0,alberta,Other
+1608,2021,0,other,Other
+1609,2021,4200000,british columbia,Seed
+1610,2021,166000000,british columbia,Series D+
+1611,2021,79200000,british columbia,Series B
+1612,2021,1000000,ontario,Other
+1613,2021,3000000,ontario,Series D+
+1614,2021,6500000,ontario,Series A
+1615,2021,25000000,quebec,Other
+1616,2021,750000,ontario,Other
+1617,2021,3000000,ontario,Other
+1618,2021,2000000,british columbia,Seed
+1619,2021,7000000,ontario,Series A
+1620,2021,6500000,ontario,Seed
+1621,2021,10000000,alberta,Other
+1622,2019,600000,alberta,Seed
+1623,2021,1000000,ontario,Seed
+1624,2021,1400000,ontario,Seed
+1625,2021,1400000,ontario,Seed
+1626,2021,1600000,quebec,Seed
+1627,2021,270000,east coast,Other
+1628,2021,21575000,quebec,Series A
+1629,2021,8500000,ontario,Other
+1630,2020,8000000,east coast,Series A
+1631,2021,37900000,british columbia,Series B
+1632,2021,92900000,british columbia,Series A
+1633,2021,1150000,alberta,Seed
+1634,2021,0,ontario,Other
+1635,2021,4000000,ontario,Seed
+1636,2021,250000,ontario,Other
+1637,2021,1900000,alberta,Seed
+1638,2021,2750000,ontario,Seed
+1639,2021,68000,british columbia,Other
+1640,2021,0,east coast,Seed
+1641,2021,40000000,ontario,Series B
+1642,2021,21000000,ontario,Series A
+1643,2021,2000000,ontario,Other
+1644,2020,600000,ontario,Other
+1645,2021,5500000,british columbia,Seed
+1646,2021,1900000,ontario,Seed
+1647,2021,128000,ontario,Other
+1648,2020,1000000,ontario,Other
+1649,2020,3700000,ontario,Seed
+1650,2021,68000000,ontario,Series B
+1651,2021,61900000,ontario,Other
+1652,2021,9000000,quebec,Seed
+1653,2021,70000000,ontario,Series B
+1654,2021,10000000,ontario,Series A
+1655,2019,3000000,ontario,Seed
+1656,2021,5100000,ontario,Seed
+1657,2021,20000000,ontario,Series A
+1658,2021,6300000,british columbia,Seed
+1659,2021,1200000,quebec,Seed
+1660,2021,37000000,ontario,Other
+1661,2021,0,ontario,Seed
+1662,2021,9000000,british columbia,Series A
+1663,2021,1680000,british columbia,Seed
+1664,2019,1300000,british columbia,Other
+1665,2021,2250000,alberta,Seed
+1666,2021,250000,ontario,Other
+1667,2021,99000000,british columbia,Seed
+1668,2021,2900000,british columbia,Seed
+1669,2021,19000000,british columbia,Other
+1670,2021,15500000,british columbia,Series A
+1671,2021,3500000,british columbia,Seed
+1672,2021,165000000,british columbia,Other
+1673,2021,120594425,ontario,Series C
+1674,2021,250000,ontario,Other
+1675,2021,31600000,ontario,Other
+1676,2019,1000000,ontario,Seed
+1677,2021,4100000,east coast,Seed
+1678,2019,1200000,east coast,Other
+1679,2021,56800000,quebec,Other
+1680,2021,5000000,british columbia,Seed
+1681,2021,25000,ontario,Other
+1682,2021,22800000,ontario,Other
+1683,2021,2800000,ontario,Seed
+1684,2021,0,alberta,Other
+1685,2021,100000000,east coast,Series C
+1686,2020,0,east coast,Other
+1687,2021,25000000,quebec,Series B
+1688,2020,6400000,quebec,Other
+1689,2021,470000,other,Other
+1690,2021,9000000,british columbia,Seed
+1691,2021,15000000,quebec,Series A
+1692,2021,25000,british columbia,Other
+1693,2020,150000,alberta,Seed
+1694,2021,1640000,alberta,Other
+1695,2021,120000,ontario,Other
+1696,2020,120000,east coast,Other
+1697,2021,0,alberta,Other
+1698,2021,0,alberta,Seed
+1699,2021,120000,ontario,Other
+1700,2021,20000000,other,Seed
+1701,2021,100000,ontario,Other
+1702,2021,1250000,ontario,Other
+1703,2021,120000,quebec,Other
+1704,2021,120000,quebec,Other
+1705,2021,125000,ontario,Seed
+1706,2021,7000000,other,Seed
+1707,2021,120000,east coast,Other
+1708,2021,4460000,ontario,Seed
+1709,2021,0,ontario,Series A
+1710,2021,120000,ontario,Other
+1711,2021,2000000,ontario,Seed
+1712,2021,119500000,other,Other
+1713,2019,40000000,other,Other
+1714,2021,0,ontario,Other
+1715,2021,750000,east coast,Seed
+1716,2020,120000,east coast,Other
+1717,2019,550000,east coast,Other
+1718,2021,1200000,east coast,Seed
+1719,2019,2000000,quebec,Seed
+1720,2021,8000000,quebec,Series A
+1721,2019,22000000,other,Series A
+1722,2021,35000000,other,Series B
+1723,2021,120000,alberta,Other
+1724,2021,2225000,alberta,Seed
+1725,2021,120000,ontario,Other
+1726,2021,2000000,ontario,Seed
+1727,2022,12700000,alberta,Series A
+1728,2022,3000000,east coast,Seed
+1729,2022,446500000,ontario,Series D+
+1730,2019,120000,ontario,Other
+1731,2020,5000000,alberta,Series A
+1732,2021,7500000,alberta,Series A
+1733,2021,2300000,east coast,Seed
+1734,2021,2000000,british columbia,Seed
+1735,2021,8400000,other,Series A
+1736,2021,12500000,ontario,Series A
+1737,2021,1000000,ontario,Other
+1738,2019,2600000,east coast,Seed
+1739,2021,6000000,east coast,Series A
+1740,2021,2500000,east coast,Other
+1741,2019,120000,east coast,Other
+1742,2021,2500000,east coast,Seed
+1743,2019,10000000,quebec,Series A
+1744,2021,4500000,quebec,Other
+1745,2021,20000000,ontario,Other
+1746,2019,13200000,ontario,Series A
+1747,2021,7500000,alberta,Other
+1748,2021,0,alberta,Other
+1749,2021,11200000,ontario,Series A
+1750,2021,3800000,east coast,Other
+1751,2021,40000000,quebec,Other
+1752,2021,750000,east coast,Other
+1753,2019,2000000,ontario,Seed
+1754,2019,10000000,other,Series A
+1755,2021,21500000,other,Series B
+1756,2019,25000,east coast,Other
+1757,2021,1300000,east coast,Seed
+1758,2021,5200000,other,Series A
+1759,2021,137402,ontario,Other
+1760,2021,3600000,ontario,Seed
+1761,2021,4200000,quebec,Other
+1762,2021,2250000,british columbia,Seed
+1763,2021,125000,ontario,Seed
+1764,2021,125000,ontario,Seed
+1765,2021,884000,british columbia,Other
+1766,2021,125000,british columbia,Seed
+1767,2021,125000,ontario,Seed
+1768,2021,125000,ontario,Seed
+1769,2021,872783,ontario,Other
+1770,2019,290000,east coast,Seed
+1771,2021,594681,east coast,Seed
+1772,2022,0,ontario,Other
+1773,2022,7600000,ontario,Series A
+1774,2022,750000,british columbia,Seed
+1775,2022,125000,british columbia,Other
+1776,2022,125000,british columbia,Other
+1777,2022,125000,ontario,Other
+1778,2022,125000,british columbia,Other
+1779,2022,315000000,ontario,Other
+1780,2022,33850000,ontario,Seed
+1781,2022,6000000,alberta,Series A
+1782,2022,43700000,ontario,Series B
+1783,2022,6200000,ontario,Series A
+1784,2022,156000,alberta,Seed
+1785,2022,1090000,alberta,Other
+1786,2022,2810000,alberta,Seed
+1787,2022,2160000,british columbia,Seed
+1788,2022,2100000,alberta,Seed
+1789,2022,1100000,ontario,Other
+1790,2022,87260000,british columbia,Series C
+1791,2022,1000000,alberta,Other
+1792,2022,744000000,ontario,Series C
+1793,2022,44000000,quebec,Series A
+1794,2022,1850000,ontario,Seed
+1795,2022,8130000,ontario,Series A
+1796,2022,18700000,british columbia,Series A
+1797,2022,6800000,alberta,Series A
+1798,2022,63000000,ontario,Series C
+1799,2022,785000,ontario,Other
+1800,2022,450000,other,Other
+1801,2021,3500000,quebec,Seed
+1802,2021,2500000,quebec,Seed
+1803,2021,3807450,quebec,Other
+1804,2021,3000000,quebec,Other
+1805,2021,3200000,quebec,Other
+1806,2021,3000000,quebec,Seed
+1807,2021,54600000,quebec,Other
+1808,2021,1300000,quebec,Other
+1809,2022,2760000,british columbia,Seed
+1810,2022,7663800,british columbia,Other
+1811,2022,0,alberta,Other
+1812,2022,1405260,ontario,Seed
+1813,2022,1915740,ontario,Seed
+1814,2022,20000000,quebec,Series A
+1815,2022,50909000,british columbia,Series A
+1816,2022,60000000,quebec,Series A
+1817,2022,125000000,quebec,Series A
+1818,2022,0,ontario,Other
+1819,2022,181000000,quebec,Series B
+1820,2022,160000000,ontario,Series D+
+1821,2022,7612890,ontario,Seed
+1822,2022,2000000,british columbia,Series A
+1823,2022,76096500,british columbia,Other
+1824,2022,2600000,quebec,Other
+1825,2022,3809325,quebec,Other
+1826,2020,12500000,quebec,Seed
+1827,2022,30000000,quebec,Series A
+1828,2022,16800000,quebec,Series A
+1829,2022,6340350,ontario,Series A
+1830,2022,31000000,ontario,Other
+1831,2022,7604700,ontario,Seed
+1832,2022,3043716,ontario,Seed
+1833,2022,147895940,quebec,Series D+
+1834,2022,2000000,quebec,Seed
+1835,2022,600000,quebec,Seed
+1836,2022,27500000,ontario,Series B
+1837,2022,63000000,quebec,Series A
+1838,2022,9500000,quebec,Seed
+1839,2022,25000000,ontario,Series B
+1840,2022,40000000,quebec,Other
+1841,2022,636000,east coast,Seed
+1842,2022,636000,east coast,Seed
+1843,2022,800000,east coast,Other
+1844,2022,100000,ontario,Other
+1845,2022,3900000,quebec,Seed
+1846,2020,100000,quebec,Other
+1847,2022,4400000,british columbia,Seed
+1848,2022,13500000,other,Seed
+1849,2022,6500000,ontario,Seed
+1850,2022,17500000,ontario,Series A
+1851,2022,101600000,other,Series C
+1852,2022,20000000,quebec,Other
+1853,2022,4000000,east coast,Seed
+1854,2022,0,other,Seed
+1855,2022,9800000,british columbia,Other
+1856,2022,7300000,british columbia,Other
+1857,2022,0,quebec,Other
+1858,2022,540000,british columbia,Other
+1859,2022,300000,ontario,Other
+1860,2022,178019100,quebec,Series C
+1861,2022,343000000,quebec,Series D+
+1862,2022,159000000,ontario,Series B
+1863,2022,0,british columbia,Other
+1864,2022,3200000,east coast,Series A
+1865,2022,1000000,ontario,Seed
+1866,2022,1100000,quebec,Seed
+1867,2022,44440375,ontario,Series B
+1868,2022,8883735,british columbia,Other
+1869,2022,0,ontario,Other
+1870,2022,50700000,ontario,Series B
+1871,2022,20000000,ontario,Series A
+1872,2022,7200000,quebec,Seed
+1873,2022,507000,ontario,Other
+1874,2022,25000000,ontario,Series A
+1875,2022,15300000,british columbia,Series A
+1876,2022,14000000,quebec,Other
+1877,2022,400000,alberta,Seed
+1878,2022,4580946,ontario,Seed
+1879,2022,23600000,ontario,Series A
+1880,2022,10000000,alberta,Other
+1881,2022,593000,ontario,Seed
+1882,2022,5100000,east coast,Seed
+1883,2022,15000000,ontario,Series A
+1884,2022,15600000,ontario,Series A
+1885,2022,75500000,british columbia,Series A
+1886,2022,17800000,alberta,Series A
+1887,2022,19035825,ontario,Series A
+1888,2022,1100000,quebec,Seed
+1889,2022,14009820,ontario,Seed
+1890,2022,5500000,british columbia,Seed
+1891,2022,3800000,ontario,Seed
+1892,2022,6000000,ontario,Seed
+1893,2022,11000000,ontario,Seed
+1894,2022,2600000,ontario,Seed
+1895,2022,4300000,quebec,Seed
+1896,2022,1250000,other,Seed
+1897,2022,1401455,quebec,Other
+1898,2022,0,british columbia,Series B
+1899,2022,4700000,east coast,Series A
+1900,2022,1400000,quebec,Seed
+1901,2022,5400000,alberta,Series A
+1902,2022,55000000,alberta,Series B
+1903,2022,120000000,quebec,Series B
+1904,2022,4100000,ontario,Seed
+1905,2022,2200000,alberta,Seed
+1906,2022,3400000,ontario,Seed
+1907,2022,400000,alberta,Other
+1908,2022,7500000,ontario,Seed
+1909,2022,4200000,east coast,Seed
+1910,2022,5000000,ontario,Seed
+1911,2022,16000000,alberta,Series A
+1912,2022,30000000,alberta,Other
+1913,2022,1700000,ontario,Seed
+1914,2022,12567550,ontario,Series A
+1915,2022,1800000,ontario,Seed
+1916,2022,15079140,british columbia,Other
+1917,2022,1884502,british columbia,Seed
+1918,2022,15000000,quebec,Series A
+1919,2022,500000,other,Other
+1920,2022,16100000,other,Series B
+1921,2022,33500000,alberta,Series B
+1922,2022,14500000,ontario,Series A
+1923,2022,135000000,british columbia,Other
+1924,2022,20000000,ontario,Series A
+1925,2022,30000000,ontario,Series A
+1926,2022,5700000,ontario,Seed
+1927,2022,6200000,ontario,Series A
+1928,2022,2200000,alberta,Seed
+1929,2020,1000000,alberta,Other
+1930,2022,0,ontario,Other
+1931,2022,636000,british columbia,Seed
+1932,2022,636000,ontario,Seed
+1933,2022,636000,british columbia,Seed
+1934,2022,636000,ontario,Seed
+1935,2022,636000,ontario,Seed
+1936,2022,636000,ontario,Seed
+1937,2022,636000,ontario,Seed
+1938,2022,636000,ontario,Seed
+1939,2022,636000,ontario,Seed
+1940,2022,636000,british columbia,Seed
+1941,2022,636000,ontario,Seed
+1942,2022,636000,ontario,Seed
+1943,2020,156000,ontario,Seed
+1944,2020,156000,ontario,Seed
+1945,2020,156000,ontario,Seed
+1946,2020,156000,british columbia,Seed
+1947,2020,156000,ontario,Seed
+1948,2020,156000,alberta,Seed
+1949,2020,156000,ontario,Seed
+1950,2019,156000,british columbia,Seed
+1951,2019,156000,ontario,Seed
+1952,2019,156000,quebec,Seed
+1953,2019,156000,east coast,Seed
+1954,2020,156000,other,Seed
+1955,2020,156000,ontario,Seed
+1956,2020,156000,ontario,Seed
+1957,2021,156000,quebec,Seed
+1958,2022,1700000,ontario,Seed
+1959,2022,2000000,east coast,Seed
+1960,2022,1000000,ontario,Seed
+1961,2022,4700000,ontario,Seed
+1962,2022,1100000,british columbia,Other
+1963,2022,3700000,other,Seed
+1964,2022,3800000,ontario,Seed
+1965,2022,31000000,ontario,Series A
+1966,2022,0,british columbia,Seed
+1967,2022,4407025,ontario,Other
+1968,2022,0,ontario,Seed
+1969,2022,5030620,ontario,Seed
+1970,2022,36513465,british columbia,Seed
+1971,2022,10000000,ontario,Series A
+1972,2022,9000000,alberta,Seed
+1973,2022,2500000,ontario,Seed
+1974,2022,2700000,ontario,Seed
+1975,2022,6000000,quebec,Series A
+1976,2022,1200000,ontario,Other
+1977,2022,2650000,quebec,Seed
+1978,2022,37800000,ontario,Series B
+1979,2022,14400000,ontario,Series B
+1980,2022,10000000,ontario,Series B
+1981,2022,3500000,british columbia,Series A
+1982,2022,10000000,ontario,Seed
+1983,2022,2000000,quebec,Seed
+1984,2022,3000000,british columbia,Seed
+1985,2022,5000000,alberta,Seed
+1986,2022,35000000,alberta,Series A
+1987,2022,1919467,ontario,Seed
+1988,2022,12700000,ontario,Seed
+1989,2022,16500000,ontario,Series A
+1990,2022,7500000,alberta,Series A
+1991,2022,625000,ontario,Other
+1992,2022,10000000,alberta,Other
+1993,2022,2300000,east coast,Seed
+1994,2019,600000,east coast,Other
+1995,2022,128000000,ontario,Series B
+1996,2022,2950000,east coast,Seed
+1997,2022,185000000,alberta,Series C
+1998,2022,1900000,british columbia,Seed
+1999,2022,0,ontario,Other
+2000,2022,350000,east coast,Other
+2001,2022,4950000,quebec,Seed
+2002,2022,123700000,quebec,Series C
+2003,2022,65100000,british columbia,Series B
+2004,2021,1000000,ontario,Other
+2005,2022,9100000,quebec,Seed
+2006,2022,5827702,quebec,Series A
+2007,2021,2000000,ontario,Seed
+2008,2022,537684160,ontario,Other
+2009,2022,5299783,british columbia,Seed
+2010,2022,57800000,ontario,Series B
+2011,2022,13400000,ontario,Series A
+2012,2022,19300000,ontario,Series A
+2013,2022,4496117,ontario,Seed
+2014,2022,6000000,alberta,Other
+2015,2022,30000000,east coast,Series A
+2016,2022,2200000,ontario,Seed
+2017,2022,300000,east coast,Other
+2018,2022,2300000,ontario,Seed
+2019,2022,8980370,british columbia,Series A
+2020,2022,7000000,british columbia,Seed
+2021,2022,6390000,ontario,Seed
+2022,2022,25000000,ontario,Series B
+2023,2022,5000000,ontario,Seed
+2024,2022,10500000,quebec,Series B
+2025,2022,1230000,alberta,Other
+2026,2022,2700000,ontario,Seed
+2027,2022,3800000,ontario,Seed
+2028,2022,1065000,ontario,Seed
+2029,2022,30000000,quebec,Other
+2030,2022,33900000,british columbia,Series B
+2031,2020,5000000,british columbia,Series A
+2032,2022,21000000,ontario,Series A
+2033,2021,6000000,ontario,Seed
+2034,2022,3500000,quebec,Seed
+2035,2022,2600000,british columbia,Seed
+2036,2022,1100000,ontario,Seed
+2037,2022,4100000,alberta,Seed
+2038,2022,2440000,ontario,Seed
+2039,2022,2500000,ontario,Seed
+2040,2020,2000000,ontario,Seed
+2041,2022,7600000,ontario,Seed
+2042,2022,500000,ontario,Other
+2043,2022,3800000,alberta,Seed
+2044,2022,2500000,quebec,Seed
+2045,2022,13100000,british columbia,Series A
+2046,2022,2500000,british columbia,Seed
+2047,2022,10000000,ontario,Series A
+2048,2022,75200000,ontario,Series A
+2049,2022,9500000,quebec,Series A
+2050,2022,6200000,british columbia,Seed
+2051,2022,400000,british columbia,Other
+2052,2022,638882,british columbia,Seed
+2053,2022,350000,british columbia,Other
+2054,2022,600000,ontario,Seed
+2055,2022,350000,british columbia,Other
+2056,2022,7000000,ontario,Series A
+2057,2022,14200000,ontario,Series A
+2058,2022,3200000,ontario,Seed
+2059,2022,3900000,ontario,Seed
+2060,2022,8000000,ontario,Series A
+2061,2021,0,ontario,Seed
+2062,2022,7000000,british columbia,Series A
+2063,2022,1000000,alberta,Other
+2064,2022,25000000,quebec,Series B
+2065,2022,5300000,ontario,Seed
+2066,2022,2250000,british columbia,Seed
+2067,2022,5100000,british columbia,Seed
+2068,2022,3000000,ontario,Other
+2069,2022,1000000,quebec,Seed
+2070,2022,10000000,quebec,Seed
+2071,2022,5801287,ontario,Series A
+2072,2022,1000000,alberta,Other
+2073,2022,2900000,quebec,Seed
+2074,2022,3200000,ontario,Other
+2075,2022,1200000,other,Seed
+2076,2022,5200000,quebec,Seed
+2077,2022,23500000,ontario,Series B
+2078,2022,1000000,british columbia,Other
+2079,2022,2300000,alberta,Seed
+2080,2022,17172870,ontario,Series A
+2081,2022,3000000,ontario,Seed
+2082,2022,26000000,east coast,Series A
+2083,2022,45000000,british columbia,Other
+2084,2022,5600000,ontario,Series A
+2085,2022,3910755,quebec,Seed
+2086,2022,18000000,quebec,Series A
+2087,2022,0,other,Other
+2088,2022,0,alberta,Other
+2089,2022,0,alberta,Other
+2090,2022,0,alberta,Other
+2091,2022,0,other,Other
+2092,2022,0,other,Other
+2093,2022,1549956,british columbia,Other
+2094,2022,12000000,british columbia,Series A
+2095,2022,5500000,ontario,Seed
+2096,2022,3800000,other,Seed
+2097,2022,2500000,quebec,Other
+2098,2022,30000000,quebec,Series A
+2099,2022,11800000,east coast,Other
+2100,2022,12800000,ontario,Series A
+2101,2022,20000000,ontario,Other
+2102,2022,13000000,alberta,Series A
+2103,2022,2500000,ontario,Other
+2104,2022,12500000,alberta,Other
+2105,2022,2000000,british columbia,Other
+2106,2022,36000000,ontario,Series B
+2107,2022,0,ontario,Other
+2108,2022,12100000,ontario,Series C
+2109,2022,4200000,ontario,Series A
+2110,2022,3140000,ontario,Seed
+2111,2022,6500000,ontario,Seed
+2112,2022,20000000,ontario,Other
+2113,2022,20000000,ontario,Series A
+2114,2022,3100000,british columbia,Seed
+2115,2022,11000000,ontario,Other
+2116,2022,3900000,alberta,Series A
+2117,2022,3300000,ontario,Seed
+2118,2022,646415,ontario,Seed
+2119,2022,500000,ontario,Other
+2120,2022,5000000,quebec,Seed
+2121,2022,0,quebec,Series A
+2122,2022,66000000,ontario,Other
+2123,2022,13000000,ontario,Series A
+2124,2022,3200000,ontario,Other
+2125,2022,27,quebec,Other
+2126,2022,2000000,east coast,Other
+2127,2022,21070000,british columbia,Series A
+2128,2022,1450000,east coast,Seed
+2129,2022,5100000,east coast,Series A
+2130,2022,2500000,british columbia,Seed
+2131,2022,10000000,ontario,Other
+2132,2022,6000000,ontario,Other
+2133,2022,25000000,ontario,Other
+2134,2022,13000000,ontario,Series A
+2135,2022,4200000,quebec,Seed
+2136,2022,4690000,quebec,Seed
+2137,2022,4000000,british columbia,Seed
+2138,2022,0,ontario,Other
+2139,2022,2170000,ontario,Other
+2140,2022,5000000,ontario,Other
+2141,2022,0,british columbia,Series A
+2142,2022,96067300,ontario,Series C
+2143,2022,16700000,quebec,Other
+2144,2022,3500000,ontario,Seed
+2145,2022,1100000,british columbia,Other
+2146,2022,0,quebec,Series A
+2147,2022,0,quebec,Seed
+2148,2022,2550000,alberta,Seed
+2149,2022,88000000,ontario,Series A
+2150,2022,54000000,ontario,Series A
+2151,2022,41000000,ontario,Series A
+2152,2022,5500000,british columbia,Seed
+2153,2022,5500000,ontario,Seed
+2154,2022,8000000,ontario,Other
+2155,2022,8000000,ontario,Other
+2156,2022,2000000,british columbia,Seed
+2157,2022,3000000,quebec,Seed
+2158,2022,7000000,ontario,Other
+2159,2022,4000000,ontario,Other
+2160,2022,2100000,ontario,Other
+2161,2022,1400000,ontario,Other
+2162,2022,92000000,ontario,Series B
+2163,2022,95000000,quebec,Series C
+2164,2022,4000000,ontario,Series A
+2165,2022,3030000,east coast,Seed
+2166,2022,75000000,ontario,Other
+2167,2022,4000000,ontario,Other
+2168,2022,2000000,ontario,Seed
+2169,2022,13750000,quebec,Series A
+2170,2022,10000000,ontario,Other
+2171,2022,20000000,quebec,Other
+2172,2022,19700000,ontario,Series B
+2173,2022,4000000,ontario,Seed
+2174,2022,55000000,ontario,Series B
+2175,2022,2390000,ontario,Other
+2176,2022,2700000,quebec,Seed
+2177,2022,9617755,alberta,Other
+2178,2022,12800000,british columbia,Other
+2179,2022,150000000,ontario,Other
+2180,2022,750000,british columbia,Other
+2181,2022,130000000,quebec,Other
+2182,2022,132575000,ontario,Series C
+2183,2022,3000000,ontario,Other
+2184,2022,79539900,ontario,Other
+2185,2022,2400000,ontario,Other
+2186,2022,95000000,alberta,Series C
+2187,2022,2400000,ontario,Other
+2188,2022,12000000,quebec,Seed
+2189,2022,54000000,alberta,Series B
+2190,2022,4700000,british columbia,Seed
+2191,2022,10727600,ontario,Series A
+2192,2022,66771250,quebec,Series D+
+2193,2022,10400000,ontario,Series B
+2194,2022,22800000,quebec,Other
+2195,2022,5000000,quebec,Seed
+2196,2022,6000000,british columbia,Seed
+2197,2022,19532152,ontario,Other
+2198,2022,5500000,quebec,Seed
+2199,2022,2000000,ontario,Seed
+2200,2022,19798010,ontario,Series A
+2201,2022,12000000,british columbia,Series B
+2202,2022,75000000,ontario,Series C
+2203,2022,42000000,british columbia,Series D+
+2204,2022,40975950,east coast,Series C
+2205,2022,14329665,ontario,Seed
+2206,2022,30000000,british columbia,Other
+2207,2022,1500000,quebec,Other
+2208,2022,27000000,ontario,Series B
+2209,2022,80000000,quebec,Series C
+2210,2022,13900000,ontario,Series A
+2211,2022,7944289,alberta,Other
+2212,2022,4000000,ontario,Seed
+2213,2022,1500000,british columbia,Seed
+2214,2022,4000000,ontario,Seed
+2215,2022,46000000,quebec,Other
+2216,2022,38400000,ontario,Other
+2217,2022,318000000,british columbia,Series D+
+2218,2022,8100000,ontario,Other
+2219,2023,47000000,quebec,Series C
+2220,2023,13400000,alberta,Series B
+2221,2023,8000000,east coast,Series A
+2222,2023,8053650,british columbia,Seed
+2223,2023,30000000,quebec,Other
+2224,2023,50000000,alberta,Series A
+2225,2023,13700000,ontario,Other
+2226,2023,6700000,british columbia,Series A
+2227,2023,15966300,ontario,Series A
+2228,2023,30000000,ontario,Series B
+2229,2023,20000000,other,Series B
+2230,2023,1000000,british columbia,Other
+2231,2023,3000000,quebec,Seed
+2232,2023,6700000,east coast,Series A
+2233,2023,24000000,other,Series A
+2234,2023,133661500,alberta,Series D+
+2235,2023,10800000,ontario,Seed
+2236,2023,9100000,british columbia,Series B
+2237,2023,10000000,quebec,Series A
+2238,2023,2000000,alberta,Seed
+2239,2023,9500000,ontario,Series A
+2240,2023,4000000,british columbia,Series A
+2241,2023,0,ontario,Seed
+2242,2023,1400000,east coast,Other
+2243,2023,8000000,ontario,Other
+2244,2023,3600000,ontario,Seed
+2245,2023,8600000,ontario,Series A
+2246,2023,2000000,quebec,Other
+2247,2023,15100000,alberta,Seed
+2248,2023,6200000,alberta,Seed
+2249,2023,2500000,quebec,Other
+2250,2023,125000000,quebec,Other
+2251,2023,1300000,ontario,Other
+2252,2023,2000000,ontario,Other
+2253,2023,20000000,quebec,Other
+2254,2023,2700000,ontario,Other
+2255,2023,4000000,ontario,Seed
+2256,2023,10000000,british columbia,Series A
+2257,2023,38000000,quebec,Other
+2258,2023,34000000,quebec,Series B
+2259,2023,0,ontario,Other
+2260,2023,16250000,ontario,Other
+2261,2023,34400000,british columbia,Series B
+2262,2023,4800000,quebec,Seed
+2263,2023,1000000,quebec,Other
+2264,2023,5100000,alberta,Seed
+2265,2023,100000,british columbia,Other
+2266,2023,21708240,british columbia,Series A
+2267,2023,5407980,ontario,Seed
+2268,2023,676192,ontario,Other
+2269,2023,20000000,ontario,Other
+2270,2023,1400000,ontario,Seed
+2271,2023,2100000,ontario,Other
+2272,2023,22321447,ontario,Series B
+2273,2023,0,ontario,Other
+2274,2023,2700000,alberta,Other
+2275,2023,5000000,quebec,Seed
+2276,2023,18000000,ontario,Series B
+2277,2023,12000000,quebec,Series A
+2278,2023,120000000,british columbia,Series B
+2279,2023,3700000,british columbia,Seed
+2280,2023,8220000,ontario,Other
+2281,2023,40000000,ontario,Series B
+2282,2023,12500000,quebec,Series A
+2283,2023,1300000,british columbia,Other
+2284,2023,3800000,ontario,Seed
+2285,2023,21000000,quebec,Other
+2286,2023,19997775,ontario,Other
+2287,2023,124328800,ontario,Series C
+2288,2023,1200000,other,Seed
+2289,2023,1343195,ontario,Other
+2290,2023,0,quebec,Other
+2291,2023,260000000,ontario,Other
+2292,2023,700000,british columbia,Other
+2293,2023,11400000,ontario,Series A
+2294,2023,2200000,ontario,Other
+2295,2023,26899100,quebec,Series A
+2296,2023,30000000,quebec,Series C
+2297,2023,40625850,british columbia,Other
+2298,2023,11000000,quebec,Series A
+2299,2023,5822479,ontario,Seed
+2300,2023,0,british columbia,Series A
+2301,2023,142000000,british columbia,Series B
+2302,2023,12000000,british columbia,Other
+2303,2023,27000000,other,Series A
+2304,2023,36583785,ontario,Other
+2305,2023,120000000,quebec,Series B
+2306,2023,34000000,ontario,Series B
+2307,2023,15000000,ontario,Series A
+2308,2023,10000000,quebec,Other
+2309,2023,1300000,ontario,Other
+2310,2023,0,quebec,Other
+2311,2023,3000000,quebec,Seed
+2312,2023,15000000,quebec,Series A
+2313,2023,0,british columbia,Other
+2314,2023,6500000,quebec,Other
+2315,2023,1483625,british columbia,Other
+2316,2023,7000000,ontario,Series A
+2317,2023,2000000,ontario,Other
+2318,2023,47000000,ontario,Other
+2319,2023,20000000,quebec,Series A
+2320,2023,0,ontario,Series C
+2321,2023,27000000,quebec,Series B
+2322,2023,10900000,ontario,Other
+2323,2023,300000000,british columbia,Other
+2324,2023,1200000,other,Other
+2325,2023,95000000,ontario,Series D+
+2326,2023,2000000,british columbia,Seed
+2327,2023,1000000,ontario,Other
+2328,2023,1400000,east coast,Seed
+2329,2023,6000000,british columbia,Series A
+2330,2023,1250000,ontario,Other
+2331,2023,2500000,quebec,Other
+2332,2023,8000000,ontario,Series A
+2333,2023,125000000,quebec,Other
+2334,2023,1671162,quebec,Other
+2335,2023,360301500,ontario,Series C
+2336,2023,11200000,ontario,Other
+2337,2023,3000000,british columbia,Other
+2338,2023,17000000,alberta,Series A
+2339,2023,1130000,east coast,Other
+2340,2023,1100000,alberta,Other
+2341,2023,7000000,ontario,Series A
+2342,2023,1300000,ontario,Other
+2343,2023,3500000,british columbia,Seed
+2344,2023,50200000,ontario,Series B
+2345,2023,80000000,alberta,Series B
+2346,2023,3299975,british columbia,Seed
+2347,2023,15485442,ontario,Seed
+2348,2023,1300000,ontario,Other
+2349,2023,7900000,ontario,Seed
+2350,2023,3000000,alberta,Seed
+2351,2023,2200000,quebec,Other
+2352,2023,40000000,ontario,Seed
+2353,2023,12400000,ontario,Series A
+2354,2023,1000000,ontario,Other
+2355,2023,20000000,alberta,Series A
+2356,2023,9500000,ontario,Series A
+2357,2023,105934800,east coast,Other
+2358,2023,33106750,alberta,Series B
+2359,2023,9268420,ontario,Other
+2360,2023,3250000,quebec,Seed
+2361,2023,1000000,british columbia,Other
+2362,2023,2900000,ontario,Seed
+2363,2023,1500000,alberta,Seed
+2364,2023,0,ontario,Other
+2365,2023,3000000,british columbia,Seed
+2366,2023,8000000,ontario,Series A
+2367,2023,2350000,ontario,Seed
+2368,2023,42302400,british columbia,Other
+2369,2023,3520000,east coast,Seed
+2370,2023,1800000,ontario,Seed
+2371,2023,79145100,ontario,Series C
+2372,2023,12000000,ontario,Other
+2373,2023,79195200,ontario,Other
+2374,2023,5000000,quebec,Seed
+2375,2023,34400000,alberta,Series A
+2376,2023,12000000,alberta,Series B
+2377,2023,17500000,quebec,Series B
+2378,2023,10000000,british columbia,Series A
+2379,2023,133300000,ontario,Other
+2380,2023,33500000,british columbia,Series D+
+2381,2023,10000000,ontario,Series A
+2382,2023,15000000,ontario,Other
+2383,2023,50000000,quebec,Series B
+2384,2023,30000000,ontario,Other
+2385,2023,1600000,alberta,Other
+2386,2023,3800000,alberta,Seed
+2387,2023,22300000,ontario,Seed
+2388,2023,2700000,british columbia,Seed
+2389,2023,2500000,ontario,Seed
+2390,2023,33000000,quebec,Series A
+2391,2023,54300000,ontario,Other
+2392,2023,1700000,quebec,Seed
+2393,2023,5000000,ontario,Other
+2394,2023,27283000,british columbia,Series A
+2395,2023,1000000,ontario,Other
+2396,2023,1637190,quebec,Seed
+2397,2023,3250000,ontario,Seed
+2398,2023,1700000,ontario,Other
+2399,2023,59900000,quebec,Series C
+2400,2023,1400000,ontario,Other
+2401,2023,250000,ontario,Seed
+2402,2023,3300000,alberta,Seed
+2403,2023,2000000,quebec,Other
+2404,2023,1500000,alberta,Seed
+2405,2023,46531875,alberta,Series B
+2406,2023,107916000,quebec,Series D+
+2407,2023,19000000,ontario,Seed
+2408,2023,12500000,quebec,Series A
+2409,2023,10000000,alberta,Other
+2410,2023,7464875,ontario,Series A
+2411,2023,2500000,ontario,Seed
+2412,2023,20000000,ontario,Series A
+2413,2023,0,ontario,Other
+2414,2023,3426625,ontario,Seed
+2415,2023,4780000,quebec,Seed
+2416,2023,82245900,ontario,Series D+
+2417,2023,2000000,ontario,Other
+2418,2023,13000000,quebec,Seed
+2419,2023,100000000,ontario,Other
+2420,2023,10000000,alberta,Seed
+2421,2023,15000000,ontario,Series A
+2422,2023,2500000,alberta,Other
+2423,2023,2500000,british columbia,Other
+2424,2023,14000000,quebec,Other
+2425,2023,0,ontario,Series A
+2426,2023,20000000,other,Series D+
+2427,2023,10500000,ontario,Seed
+2428,2023,0,ontario,Other
+2429,2023,68000000,british columbia,Series C
+2430,2023,5049963,quebec,Seed
+2431,2023,5700000,british columbia,Series A
+2432,2023,3600000,ontario,Other
+2433,2023,36000000,ontario,Other
+2434,2023,90000000,alberta,Other
+2435,2023,27000000,ontario,Seed
+2436,2023,46000000,ontario,Series B
+2437,2023,4100000,quebec,Other
+2438,2023,44600000,ontario,Other
+2439,2023,20509725,ontario,Series A
+2440,2023,10000000,ontario,Other
+2441,2023,700000,alberta,Other
+2442,2023,5000000,ontario,Seed
+2443,2023,137000000,british columbia,Other
+2444,2023,3600000,british columbia,Other
+2445,2023,7000000,quebec,Series A
+2446,2023,17500000,british columbia,Series A
+2447,2023,5000000,quebec,Seed
+2448,2023,75000000,quebec,Series A
+2449,2023,0,alberta,Other
+2450,2023,12000000,quebec,Series B
+2451,2023,4100000,ontario,Seed
+2452,2023,2000000,british columbia,Seed
+2453,2023,0,ontario,Other
+2454,2023,9500000,ontario,Series A
+2455,2023,13500000,british columbia,Other
+2456,2023,2037592,ontario,Seed
+2457,2023,12000000,quebec,Seed
+2458,2023,1850000,ontario,Other
+2459,2023,86000000,ontario,Other
+2460,2023,55000000,ontario,Series A
+2461,2023,2300000,quebec,Seed
+2462,2023,18000000,british columbia,Series A
+2463,2023,4200000,ontario,Seed
+2464,2023,5352860,british columbia,Seed
+2465,2023,26700000,british columbia,Other
+2466,2023,5000000,ontario,Seed
+2467,2023,2300000,alberta,Seed
+2468,2024,0,ontario,Other
+2469,2024,6000000,ontario,Other
+2470,2024,2000000,ontario,Seed
+2471,2024,10000000,quebec,Series A
+2472,2024,26000000,ontario,Seed
+2473,2024,0,british columbia,Other
+2474,2024,5000000,ontario,Series A
+2475,2024,229000000,quebec,Other
+2476,2024,22900000,british columbia,Other
+2477,2024,4180000,ontario,Other
+2478,2024,2000000,alberta,Seed
+2479,2024,10766440,ontario,Other
+2480,2024,20000000,ontario,Series A
+2481,2024,12700000,ontario,Series A
+2482,2024,1500000,quebec,Other
+2483,2024,1500000,alberta,Seed
+2484,2024,6500000,ontario,Seed
+2485,2024,50000000,ontario,Other
+2486,2024,6067822,quebec,Seed
+2487,2024,2000000,ontario,Seed
+2488,2024,6069487,ontario,Seed
+2489,2024,10800000,ontario,Series A
+2490,2024,10500000,quebec,Series A
+2491,2024,27000000,alberta,Series B
+2492,2024,2100000,british columbia,Other
+2493,2024,7900000,british columbia,Series A
+2494,2024,1350000,quebec,Other
+2495,2024,80000000,ontario,Series A
+2496,2024,2800000,ontario,Other
+2497,2024,1200000,quebec,Seed
+2498,2024,1100000,east coast,Other
+2499,2024,783000,alberta,Other
+2500,2024,67308250,ontario,Series A
+2501,2024,7000000,alberta,Seed
+2502,2024,2200000,ontario,Other
+2503,2024,1200000,british columbia,Seed
+2504,2024,2300000,quebec,Other
+2505,2024,7000000,ontario,Series A
+2506,2024,4735605,british columbia,Seed
+2507,2024,2000000,quebec,Seed
+2508,2024,8121840,alberta,Seed
+2509,2024,4500000,british columbia,Seed
+2510,2024,1828879,ontario,Seed
+2511,2024,28000000,british columbia,Series B
+2512,2024,45000000,ontario,Series B
+2513,2024,27219800,other,Series C
+2514,2024,1500000,quebec,Seed
+2515,2024,2000000,quebec,Other
+2516,2024,27000000,ontario,Seed
+2517,2024,5418200,ontario,Seed
+2518,2024,20315775,alberta,Other
+2519,2024,0,british columbia,Other
+2520,2024,1100000,ontario,Other
+2521,2024,1000000,ontario,Other
+2522,2024,1250000,ontario,Seed
+2523,2024,7814480,east coast,Other
+2524,2024,85000000,ontario,Series C
+2525,2024,24600000,british columbia,Other
+2526,2024,14200000,quebec,Series A
+2527,2024,70000000,british columbia,Series C
+2528,2024,25000000,quebec,Series A
+2529,2024,37343288,ontario,Series B
+2530,2024,1700000,quebec,Other
+2531,2024,2300000,other,Other
+2532,2024,8350000,ontario,Other
+2533,2024,17400000,quebec,Series B
+2534,2024,0,ontario,Other
+2535,2024,0,alberta,Other
+2536,2024,5000000,quebec,Other
+2537,2024,2700000,alberta,Seed
+2538,2024,10000000,british columbia,Series A
+2539,2024,0,ontario,Other
+2540,2024,4000000,east coast,Seed
+2541,2024,2000000,east coast,Other
+2542,2024,2300000,british columbia,Other
+2543,2024,3000000,ontario,Series A
+2544,2024,250000,other,Seed
+2545,2024,8900000,ontario,Seed
+2546,2024,2300000,quebec,Other
+2547,2024,4000000,alberta,Seed
+2548,2024,2200000,ontario,Other
+2549,2024,6800000,ontario,Seed
+2550,2024,2100000,british columbia,Seed
+2551,2024,28600000,east coast,Series B
+2552,2024,5250000,ontario,Seed
+2553,2024,2500000,ontario,Seed
+2554,2024,1500000,british columbia,Other
+2555,2024,1100000,quebec,Other
+2556,2024,1500000,ontario,Other
+2557,2024,0,ontario,Other
+2558,2024,3000000,alberta,Other
+2559,2024,0,ontario,Other
+2560,2024,44000000,ontario,Series B
+2561,2024,28703850,quebec,Series A
+2562,2024,3417550,british columbia,Seed
+2563,2024,1500000,british columbia,Seed
+2564,2024,3500000,ontario,Seed
+2565,2024,4000000,east coast,Other
+2566,2024,3000000,quebec,Seed
+2567,2024,2200000,ontario,Seed
+2568,2024,171200000,quebec,Other
+2569,2024,620525250,ontario,Other
+2570,2024,15121755,ontario,Series A
+2571,2024,26122150,ontario,Series B
+2572,2024,2748860,ontario,Series A
+2573,2024,143000000,british columbia,Other
+2574,2024,1700000,alberta,Seed
+2575,2024,23383840,quebec,Other
+2576,2024,11000000,ontario,Series A
+2577,2024,2700000,alberta,Seed
+2578,2024,136000000,quebec,Series D+
+2579,2024,4100000,ontario,Seed
+2580,2024,274049000,ontario,Series B
+2581,2024,0,quebec,Series D+
+2582,2024,8220810,quebec,Seed
+2583,2024,2500000,british columbia,Seed
+2584,2024,10000000,british columbia,Other
+2585,2024,18000000,quebec,Series A
+2586,2024,42000000,ontario,Series A
+2587,2024,6838325,british columbia,Other
+2588,2024,4700000,ontario,Series A
+2589,2024,1300000,east coast,Seed
+2590,2024,10000000,ontario,Series A
+2591,2024,10000000,ontario,Other
+2592,2024,16000000,quebec,Series B
+2593,2024,0,british columbia,Other
+2594,2024,0,british columbia,Other
+2595,2024,1200000,quebec,Seed
+2596,2024,782000,east coast,Other
+2597,2024,2700000,ontario,Seed
+2598,2024,2600000,ontario,Seed
+2599,2024,3000000,quebec,Seed
+2600,2024,17000000,alberta,Seed
+2601,2024,35000000,quebec,Series B
+2602,2024,13600000,british columbia,Series A
+2603,2024,2300000,ontario,Seed
+2604,2024,687000000,ontario,Series D+
+2605,2024,1240000000,british columbia,Series D+
+2606,2024,10000000,ontario,Series A
+2607,2024,1600000,quebec,Seed
+2608,2024,3100000,british columbia,Seed
+2609,2024,4000000,alberta,Other
+2610,2024,0,british columbia,Series A
+2611,2024,13800000,ontario,Series A
+2612,2024,2000000,other,Other
+2613,2024,51000000,quebec,Series C
+2614,2024,20000000,quebec,Other
+2615,2024,10700000,ontario,Series A
+2616,2024,575000,east coast,Other
+2617,2024,5000000,quebec,Other
+2618,2024,2000000,quebec,Other
+2619,2024,3900000,ontario,Other
+2620,2024,20000000,british columbia,Series A
+2621,2024,5000000,ontario,Other
+2622,2024,0,east coast,Other
+2623,2024,23300000,alberta,Series A
+2624,2024,11700000,ontario,Series C
+2625,2024,10000000,ontario,Other
+2626,2024,137000000,british columbia,Other
+2627,2024,2000000,east coast,Seed
+2628,2024,3500000,quebec,Seed
+2629,2024,11300000,quebec,Seed
+2630,2024,1800000,quebec,Other
+2631,2024,26000000,ontario,Series A
+2632,2024,15000000,british columbia,Series A
+2633,2024,10000000,british columbia,Series A
+2634,2024,8000000,ontario,Seed
+2635,2024,2800000,quebec,Other
+2636,2024,11000000,east coast,Series A
+2637,2024,12200000,ontario,Other
+2638,2024,8800000,british columbia,Series A
+2639,2024,42000000,british columbia,Series B
+2640,2024,1150000,ontario,Other
+2641,2024,2000000,ontario,Seed
+2642,2024,100000000,ontario,Other
+2643,2024,6400000,ontario,Seed
+2644,2024,28000000,ontario,Other
+2645,2024,42000000,quebec,Series B
+2646,2024,30000000,ontario,Series B
+2647,2024,24450000,ontario,Series A
+2648,2024,9100000,alberta,Seed
+2649,2024,8200000,ontario,Seed
+2650,2024,0,ontario,Other
+2651,2024,71000000,other,Series B
+2652,2024,26900000,alberta,Other
+2653,2024,190000000,ontario,Other
+2654,2024,10000000,east coast,Seed
+2655,2024,1100000,ontario,Other
+2656,2024,1500000,ontario,Other
+2657,2024,2900000,british columbia,Other
+2658,2024,2000000,other,Other
+2659,2024,178600000,alberta,Other
+2660,2024,2100000,ontario,Seed
+2661,2024,6200000,quebec,Seed
+2662,2024,2800000,quebec,Seed
+2663,2024,33800000,ontario,Series B
+2664,2024,822000000,british columbia,Other
+2665,2024,3,british columbia,Seed
+2666,2024,3000000,ontario,Seed
+2667,2024,2000000,ontario,Seed
+2668,2024,4100000,ontario,Seed
+2669,2024,5175000,east coast,Other
+2670,2024,28100000,british columbia,Other
+2671,2024,15800000,east coast,Series A
+2672,2024,1000000,ontario,Seed
+2673,2024,58000000,quebec,Other
+2674,2024,1,ontario,Series A
+2675,2024,2300000,ontario,Other
+2676,2024,4200000,alberta,Seed
+2677,2024,2100000,ontario,Other
+2678,2024,175000000,british columbia,Series C
+2679,2024,31000000,quebec,Seed
+2680,2024,95000000,british columbia,Other
+2681,2024,2000000,ontario,Other
+2682,2024,6959025,ontario,Seed
+2683,2024,20000000,british columbia,Other
+2684,2024,362000000,alberta,Series D+
+2685,2024,1600000,ontario,Other
+2686,2024,28,british columbia,Series B
+2687,2024,5000000,quebec,Seed
+2688,2024,32000000,ontario,Series B
+2689,2024,0,ontario,Series A
+2690,2024,2300000,ontario,Seed
+2691,2024,42200000,british columbia,Series C
+2692,2024,3000000,ontario,Seed
+2693,2024,70000000,ontario,Other
+2694,2024,0,british columbia,Other
+2695,2024,1100000,alberta,Other
+2696,2024,15000000,ontario,Series A
+2697,2024,4000000,british columbia,Series A
+2698,2024,2600000,alberta,Seed
+2699,2024,20900000,ontario,Other
+2700,2024,1500000,quebec,Seed
+2701,2024,30800000,ontario,Series A
+2702,2024,0,ontario,Other
+2703,2024,1260000,ontario,Other
+2704,2024,693000000,ontario,Series D+
+2705,2024,7067925,alberta,Seed
+2706,2024,30000000,quebec,Series A
+2707,2024,57000000,quebec,Series B
+2708,2024,115000000,british columbia,Series A
+2709,2024,1500000,ontario,Other
+2710,2024,5000000,british columbia,Series A
+2711,2024,30000000,quebec,Series B
+2712,2024,38,alberta,Series A
+2713,2024,0,ontario,Other
+2714,2024,5500000,ontario,Other
+2715,2024,1300000,east coast,Other
+2716,2024,0,ontario,Series C
+2717,2024,57300000,quebec,Other
+2718,2024,5300000,ontario,Series B
+2719,2024,30000000,british columbia,Series A
+2720,2024,7500000,ontario,Other
+2721,2024,6800000,quebec,Seed
