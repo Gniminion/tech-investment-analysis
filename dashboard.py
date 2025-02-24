@@ -392,4 +392,4 @@ def update_graph(selected_years, selected_provinces, selected_stages):
 
 if __name__ == '__main__':
     print("App is starting")
-    app.run_server(debug=True)
+    app.run_server(debug=False)
