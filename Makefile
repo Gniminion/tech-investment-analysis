@@ -1,6 +1,5 @@
 run_app:
-run_app:
-	python3 dashboard.py & sleep 30
+	python3 dashboard.py & sleep 15
 	wget -r -P pages_files http://127.0.0.1:8050/
 	wget -r -P pages_files http://127.0.0.1:8050/_dash-layout
 	wget -r -P pages_files http://127.0.0.1:8050/_dash-dependencies
@@ -11,6 +10,11 @@ run_app:
 	wget -r -P pages_files http://127.0.0.1:8050/_dash-component-suites/dash/dash_table/async-table.js
 	wget -r -P pages_files http://127.0.0.1:8050/_dash-component-suites/dash/dash_table/async-highlight.js
 	wget -r -P pages_files http://127.0.0.1:8050/_dash-component-suites/plotly/package_data/plotly.min.js
+
+	mv 127.0.0.1:8050 pages_files
+	ls -a pages_files
+	ls -a pages_files/assets
+
 	find pages_files -type f -exec sed -i.bak 's|_dash-component-suites|tech-investment-analysis/_dash-component-suites|g' {} \;
 	find pages_files -type f -exec sed -i.bak 's|_dash-layout|tech-investment-analysis/_dash-layout.json|g' {} \;
 	find pages_files -type f -exec sed -i.bak 's|_dash-dependencies|tech-investment-analysis/_dash-dependencies.json|g' {} \;
@@ -21,8 +25,11 @@ run_app:
 	mv pages_files/_dash-dependencies pages_files/_dash-dependencies.json || echo "_dash-dependencies not found"
 	mkdir -p pages_files/assets
 	mv assets/* pages_files/assets/
-	pkill -f 'python'
+	
+	ps -C python -o pid= | xargs kill -9
 
 clean_dirs:
+	ls
+	rm -rf 127.0.0.1:8050/
 	rm -rf pages_files/
 	rm -rf joblib
