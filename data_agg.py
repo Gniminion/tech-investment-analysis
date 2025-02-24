@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 # ***** HOW WE AGGREGATED THE DATA WE NEEDED FOR VISUALISATION AND MODELING (USING PYTHON PANDAS AND NUMPY) ***** # 
-# ***** ALL THE AGGREGATED DATA SHOULD BE IN THE agg_data FOLDER, EXCEPT TRAINING DATA FOR PREDICTIVE MODEL ***** #
+# ***** ALL THE AGGREGATED DATA SHOULD BE IN THE dashboard/agg_data FOLDER, EXCEPT TRAINING DATA FOR PREDICTIVE MODEL ***** #
 
 # these are the dataframe names for each of the RunQL dataset
 df_comp # raw data for companies
