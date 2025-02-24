@@ -2,23 +2,23 @@
 import pandas as pd
 import numpy as np
 
-# ***** HOW WE AGGREGATED THE DATA WE NEEDED FOR VISUALISATION AND MODELING ****** # 
+# ***** HOW WE AGGREGATED THE DATA WE NEEDED FOR VISUALISATION AND MODELING (USING PYTHON PANDAS AND NUMPY) ***** # 
+# ***** ALL THE AGGREGATED DATA SHOULD BE IN THE agg_data FOLDER, EXCEPT TRAINING DATA FOR PREDICTIVE MODEL ***** #
 
-df_comp = pd.read_csv("cleaned_data_v2/cleaned_companies.csv") # remove path names and change to some comment about raw data here after we're done
-df_di = pd.read_csv("cleaned_data_v2/cleaned_dealInvestor.csv")
-df_deals = pd.read_csv("cleaned_data_v2/cleaned_deals.csv") 
-df_invs = pd.read_csv("cleaned_data_v2/cleaned_investor.csv")
-df_eco = pd.read_csv("cleaned_data_v2/cleaned_ecosystem.csv")  
+# these are the dataframe names for each of the RunQL dataset
+df_comp # raw data for companies
+df_di  #raw data for deal investors
+df_deals  #raw data for deals
+df_invs  #raw data for investors
+df_eco #raw data for ecosystems
 
 # ------------------------------------ DATA CLEANING ------------------------------------ 
-# !!!!! add any code we had to make our cleaned datas here !!!!!!
-
 # INITIAL CLEANING (STANDARDISING ALL DATASET FORMATS)
 # DEALS cleaning:
 # drop dupes
 df_deals.drop_duplicates(subset=['id', 'companyId'], inplace=True)
 # decided to drop secondary ecosystem as there are a lot of missing values so not too helpful for analysis
-# df_deals.drop('ecosystemSecondary', axis=1, inplace=True) 
+df_deals.drop('ecosystemSecondary', axis=1, inplace=True) 
 # fill missing values with unknown
 df_deals['headquarters'].fillna('unknown', inplace=True)
 df_deals['leadInvestors'].fillna('unknown', inplace=True)
@@ -34,6 +34,58 @@ df_deals['roundType'] = df_deals['roundType'].replace({'Series ?': 'unknown'})
 for column in df_deals.select_dtypes(include=['object']).columns:
     if column != 'yearQuarter':
         df_deals[column] = df_deals[column].str.lower()
+        
+# COMPANIES CLEANING:
+df_comp.dropna(subset=['latestRoundType'], inplace=True)
+# dropping irrelevant columns for analysis
+df_comp.drop(columns=['ecosystemSecondary'], inplace=True)
+df_comp.drop(columns=['logoUrlCdn'], inplace=True)
+df_comp.drop(columns=['dateAcqusition'], inplace=True)
+df_comp.drop(columns=['acquiringCompany'], inplace=True)
+df_comp.drop(columns=['ipoDate'], inplace=True)
+df_comp.drop(columns=['peDate'], inplace=True)
+df_comp['secondaryTag'].fillna("Unknown", inplace=True)
+# replacing unknown series with unknown to standardise
+df_comp['latestRoundType'] = df_comp['latestRoundType'].replace({'series ?': 'unknown'})
+# date time formatting
+df_comp['dateFounded'] = pd.to_datetime(df_comp['dateFounded'], errors='coerce')
+df_comp['latestRoundDate'] = pd.to_datetime(df_comp['latestRoundDate'], errors='coerce')
+# lowercasing
+text_cols = ['companyName', 'ecosystemName', 'primaryTag', 'secondaryTag', 'latestRoundType',]
+for column in df_comp.select_dtypes(include=['object']).columns:
+    if column in text_cols:
+        df_deals[column] = df_deals[column].str.lower()
+
+# INVESTORS CLEANING
+df_invs['investorType'].fillna("Unknown", inplace=True)
+df_invs['city'].fillna("Unknown", inplace=True)
+df_invs['country'].fillna("Unknown", inplace=True)
+df_invs['sectors'].fillna("Unknown", inplace=True)
+df_invs['stages'].fillna("Unknown", inplace=True)
+df_invs['logoURL'].fillna("Unknown", inplace=True)
+# drop irrelevant columns
+df_invs.drop(columns=['logoURL'], inplace=True)
+# to lower
+text_cols = ['investorName', 'investorType', 'city', 'country', 'sectors', 'stages']
+for column in df_invs.select_dtypes(include=['object']).columns:
+    if column in text_cols:
+        df_deals[column] = df_deals[column].str.lower()
+        
+# DEAL INVESTORS CLEANING:
+df_di.dropna(subset=['headquarters'], inplace=True)
+df_di.drop(columns=['ecosystemSecondary'], inplace=True)
+df_di['roundType'].fillna("Unknown", inplace=True)
+df_di['investorCountry'].fillna("Unknown", inplace=True)
+text_cols = ['companyName', 'headquarters', 'investorName', 'ecosystemName', 'roundType', 'investorCountry']
+for column in df_di.select_dtypes(include=['object']).columns:
+    if column in text_cols:
+        df_di[column] = df_di[column].str.lower()
+# unknown series
+df_di['roundType'] = df_di['roundType'].replace({'series ?': 'unknown'})
+# date time and data type formatting
+df_di['date'] = pd.to_datetime(df_di['date'], errors='coerce') 
+df_di['year'] = pd.to_numeric(df_di['year'], errors='coerce')  
+df_di['leadInvestorFlag'] = df_di['leadInvestorFlag'].astype(int)
         
 # ECOSYSTEM CLEANING (to lowercase):
 for column in df_eco.select_dtypes(include=['object']).columns:

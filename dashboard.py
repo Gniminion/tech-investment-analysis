@@ -5,6 +5,8 @@ from dash import html
 from dash import dcc, Input, Output
 import plotly.express as px
 
+# ***** THIS IS THE CODE FOR HOW WE MADE THE INTERACTIVE DASHBOARD, USING PLOTLY AND DASH ***** #
+
 #------------------------------------ INVESTMENTS OVER TIME ------------------------------------
 inv_trends = pd.read_csv("agg_data/inv_trends.csv")
 deal_vol = pd.read_csv("agg_data/deal_vol.csv") 
