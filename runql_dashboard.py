@@ -8,11 +8,11 @@ import plotly.express as px
 # ***** THIS IS THE CODE FOR HOW WE MADE THE INTERACTIVE DASHBOARD, USING PLOTLY AND DASH ***** #
 
 #------------------------------------ INVESTMENTS OVER TIME ------------------------------------
-inv_trends = pd.read_csv("dashboard/agg_data/inv_trends.csv")
-deal_vol = pd.read_csv("dashboard/agg_data/deal_vol.csv") 
-ds_trends = pd.read_csv("dashboard/agg_data/ds_trends.csv")   
-reg_trends = pd.read_csv("dashboard/agg_data/reg_trends.csv")
-valid_deals = pd.read_csv("dashboard/agg_data/valid_deals.csv") 
+inv_trends = pd.read_csv("agg_data/inv_trends.csv")
+deal_vol = pd.read_csv("agg_data/deal_vol.csv") 
+ds_trends = pd.read_csv("agg_data/ds_trends.csv")   
+reg_trends = pd.read_csv("agg_data/reg_trends.csv")
+valid_deals = pd.read_csv("agg_data/valid_deals.csv") 
 
 fig_investment = px.line(inv_trends, x='year', y='amount', markers=True,
                          title='Total Investment in Canadian Startups (2019-2024)')
@@ -34,9 +34,9 @@ stage_options = [stage for stage in stage_options if stage.lower() != 'unknown']
 
 #------------------------------------ FUNDING STAGES  ------------------------------------
 
-stage_counts = pd.read_csv("dashboard/agg_data/stage_counts.csv")
-deal_size = pd.read_csv("dashboard/agg_data/deal_size.csv") 
-deal_trends = pd.read_csv("dashboard/agg_data/deal_trends.csv")   
+stage_counts = pd.read_csv("agg_data/stage_counts.csv")
+deal_size = pd.read_csv("agg_data/deal_size.csv") 
+deal_trends = pd.read_csv("agg_data/deal_trends.csv")   
 
 # proportion of deals per stage
 fig_stage_proportion = px.pie(stage_counts, 
@@ -57,10 +57,10 @@ fig_deal_trends = px.bar(deal_trends, x='year', y='id', color='roundType',
                          barmode='stack', color_discrete_sequence=px.colors.qualitative.Dark24)
 
 #------------------------------------ INVESTOR BEHAVIOUR ------------------------------------
-invs_counts = pd.read_csv("dashboard/agg_data/invs_counts.csv")
-invs_pivot = pd.read_csv("dashboard/agg_data/invs_pivot.csv") 
-ds_by_stage = pd.read_csv("dashboard/agg_data/ds_by_stage.csv") 
-top_invs = pd.read_csv('dashboard/agg_data/top_invs.csv')
+invs_counts = pd.read_csv("agg_data/invs_counts.csv")
+invs_pivot = pd.read_csv("agg_data/invs_pivot.csv") 
+ds_by_stage = pd.read_csv("agg_data/ds_by_stage.csv") 
+top_invs = pd.read_csv('agg_data/top_invs.csv')
 
 # bar 1 investor counts
 fig1 = px.bar(
@@ -116,10 +116,10 @@ fig4.update_layout(
 
 # ------------------------------------ REGIONAL INSIGHTS ------------------------------------
 
-cats = pd.read_csv('dashboard/agg_data/top10_cats.csv')
-avg_deal = pd.read_csv('dashboard/agg_data/avg_deal.csv')
-cat_pref = pd.read_csv('dashboard/agg_data/cat_pref.csv')
-hq_trends = pd.read_csv('dashboard/agg_data/hq_trends.csv')
+cats = pd.read_csv('agg_data/top10_cats.csv')
+avg_deal = pd.read_csv('agg_data/avg_deal.csv')
+cat_pref = pd.read_csv('agg_data/cat_pref.csv')
+hq_trends = pd.read_csv('agg_data/hq_trends.csv')
 
 # top investment categories
 top10_cats = px.bar(cats,
